@@ -1,32 +1,16 @@
-import { readFile, writeFile } from "fs/promises";
-import { resolve } from "path";
 import { BuildOptions } from "vite";
+import copyBunlde from "./copyBunlde";
 import "./global";
 const build: BuildOptions = {
-  // manifest: "manifest.json",
-  minify: true,
-  chunkSizeWarningLimit: 3000,
+  manifest: true,
   assetsDir: "",
   rollupOptions: {
-    output: {
-      // chunkFileNames: `[name]_chunk_[hash].js`,
-      // entryFileNames: `[name]_[hash].js`,
-      // assetFileNames: `[name]_[hash].[ext]`,
-    },
-    plugins: [
-      {
-        name: "404.html",
-        async writeBundle(options) {
-          try {
-            const content = await readFile(resolve(options.dir, "index.html"), "utf-8");
-            console.log(resolve(options.dir, "index.html"));
-            await writeFile(resolve(options.dir, "404.html"), content);
-          } catch (error) {
-            throw new Error(error);
-          }
-        },
-      },
-    ],
+    // output: {
+    //   chunkFileNames: `[name]_chunk_[hash].js`,
+    //   entryFileNames: `[name]_[hash].js`,
+    //   assetFileNames: `[name]_[hash].[ext]`,
+    // },
+    plugins: [copyBunlde("404.html", "index.html")],
   },
 };
 

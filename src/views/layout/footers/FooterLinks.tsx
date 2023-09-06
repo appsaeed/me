@@ -1,9 +1,7 @@
 import { Link } from "@solidjs/router";
 import { For } from "solid-js";
-import settings from "../../../app/settings";
 import sections from "../../../data/className/sections";
 import { Divattr } from "../../../types/dom";
-import { unslash } from "../../../utils/url";
 
 type FooterLinksProps = {
   title: string;
@@ -12,13 +10,13 @@ type FooterLinksProps = {
 export default function FooterLinks({
   title,
   items,
-  class: cn,
+  class: classes,
   ...args
 }: FooterLinksProps) {
   return (
     <div
       {...args}
-      class={`${sections.headerfooter.common} ${cn} py-8  sm:border-0 border-light `}
+      class={`${sections.headerfooter.common} ${classes} py-8  sm:border-0 border-light `}
     >
       <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white text-center">
         {title}
@@ -27,10 +25,7 @@ export default function FooterLinks({
         <For each={items}>
           {({ name, link }) => (
             <li class="mb-4">
-              <Link
-                href={`${settings.url}/${unslash(link)}`}
-                class="hover:underline capitalize"
-              >
+              <Link href={link} class="hover:underline capitalize">
                 {name}
               </Link>
             </li>

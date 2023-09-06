@@ -1,22 +1,20 @@
 "use strict";
-
 /**
  * Service Worker of PWA
  * To learn more and add one to your website, visit - https://PWA.com
  */
 
-const cacheName = "pwa-chace";
-const offlinePage = self.location.protocol + "//" + self.location.host + "/";
-const filesToCache = "add_cache_list";
-const neverCacheUrls = [/\/asc/, /\/ftools/, /manifest.webmanifest /];
+const cache_name = "pwa_chace_name";
+const cache_list = ["pwa_cache_list"];
+const cache_igno = ["pwa_chace_igno"];
 
 // Install
 self.addEventListener("install", function (e) {
   console.log("PWA service worker installation");
   e.waitUntil(
     setTimeout(() => {
-      addEventListener("message", (event) => {
-        caches.open(cacheName).then(function (cache) {
+      self.addEventListener("message", (event) => {
+        caches.open(cache_name).then(function (cache) {
           console.log("PWA service worker caching dependencies");
           event.data.map(async function (url) {
             try {
@@ -44,7 +42,6 @@ self.addEventListener("activate", function (e) {
       );
     })
   );
-  return self.clients.claim();
 });
 
 // Fetch
@@ -110,3 +107,5 @@ function checkNeverCacheList(url) {
   }
   return true;
 }
+
+("tsc --target ESNext --module ESNext --outFile service-worker.js sw.ts");

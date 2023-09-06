@@ -8,6 +8,7 @@ export default defineConfig({
   server: {
     port: Number(process.env.sss) || 31000,
   },
+  base: process.env.VITE_BASENAME,
   build: buildconfing,
   preview: {
     port: 3300,

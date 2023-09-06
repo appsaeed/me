@@ -44,7 +44,7 @@ export interface ManifestOptions {
   /**
    *
    */
-  file_handlers: Record<string, any>[];
+  file_handlers?: Record<string, any>[];
   /**
    * @default `routerBase + '?standalone=true'`
    */
@@ -56,11 +56,11 @@ export interface ManifestOptions {
   /**
    * A string that represents the identity for the application
    */
-  id: string;
+  id?: string;
   /**
    * Defines the default orientation for all the website's top-level
    */
-  orientation:
+  orientation?:
     | "any"
     | "natural"
     | "landscape"
@@ -76,31 +76,31 @@ export interface ManifestOptions {
   /**
    * @default []
    */
-  display_override: string[];
+  display_override?: string[];
   /**
    * @default `#ffffff`
    */
-  background_color: string;
+  background_color?: string;
   /**
    * @default '#42b883
    */
-  theme_color: string;
+  theme_color?: string;
   /**
    * @default `ltr`
    */
-  dir: "ltr" | "rtl";
+  dir?: "ltr" | "rtl";
   /**
    * @default `en`
    */
-  lang: string;
+  lang?: string;
   /**
    * @default A combination of `routerBase` and `options.build.publicPath`
    */
-  publicPath: string;
+  publicPath?: string;
   /**
    * @default []
    */
-  related_applications: {
+  related_applications?: {
     platform: string;
     url: string;
     id?: string;
@@ -108,18 +108,18 @@ export interface ManifestOptions {
   /**
    * @default false
    */
-  prefer_related_applications: boolean;
+  prefer_related_applications?: boolean;
   /**
    * @default []
    */
-  protocol_handlers: {
+  protocol_handlers?: {
     protocol: string;
     url: string;
   }[];
   /**
    * @default []
    */
-  shortcuts: {
+  shortcuts?: {
     name: string;
     short_name?: string;
     url: string;
@@ -129,7 +129,7 @@ export interface ManifestOptions {
   /**
    * @default []
    */
-  screenshots: {
+  screenshots?: {
     src: string;
     sizes: string;
     label?: string;
@@ -153,12 +153,12 @@ export interface ManifestOptions {
   /**
    * @default []
    */
-  categories: string[];
+  categories?: string[];
   /**
    * @default ''
    */
-  iarc_rating_id: string;
-  share_target: {
+  iarc_rating_id?: string;
+  share_target?: {
     action: string;
     method?: string;
     enctype?: string;

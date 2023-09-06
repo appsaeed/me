@@ -2,16 +2,16 @@ import { readFile, writeFile } from "fs/promises";
 import { resolve } from "path";
 type DataTypes = string;
 type Options = {
-  name: string;
+  from: string;
   path: DataTypes;
 };
-export default function copyBunlde({ name, path }: Options) {
+export default function copyBunlde(filename: string, originalFile: string) {
   const buildSource = {
-    name,
+    name: filename,
     async writeBundle(options: { dir: string }) {
       try {
-        const content = await readFile(resolve(options.dir, "index.html"), "utf-8");
-        await writeFile(resolve(options.dir, name), content);
+        const content = await readFile(resolve(options.dir, originalFile), "utf-8");
+        await writeFile(resolve(options.dir, filename), content);
       } catch (error) {
         throw new Error(error);
       }

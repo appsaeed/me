@@ -8,7 +8,7 @@ import Termandconditions from "./pages/terms-and-conditions";
 
 export default function Router() {
   return (
-    <Routes>
+    <Routes base={import.meta.env.VITE_BASENAME}>
       <Route path="/" element={<Homepage />} />
       <Route path="/license" element={<License />} />
       <Route path="/privacy-policy" element={<PrivacyPolicy />} />

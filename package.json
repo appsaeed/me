@@ -21,7 +21,6 @@
     "solid-icons": "^1.0.11",
     "solid-js": "^1.7.8",
     "sweetalert2": "^11.7.23",
-    "typed.js": "^2.0.16",
     "utilies": "^1.0.19"
   },
   "devDependencies": {

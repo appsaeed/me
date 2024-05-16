@@ -1,15 +1,13 @@
 import { getThemeStore, homeURL, unSlash } from "utilies";
 
-const basename = unSlash(import.meta.env.VITE_BASENAME) || "";
 export default {
   name: "Appsaeed",
   mode: import.meta.env.BASE_URL,
   dev: import.meta.env.DEV,
-  basename,
-  baseURL: import.meta.env.BASE_URL,
-  url: unSlash(`${location.protocol}//${location.host}/${basename}`),
+  basename: unSlash(import.meta.env.VITE_BASENAME),
+  url: homeURL(import.meta.env.VITE_BASENAME || "", "/"),
   homeURL: function (path?: string | number) {
-    return homeURL(unSlash(this.basename));
+    return homeURL([this.basename || "", String(path)], "/");
   },
   theme: {
     mode: getThemeStore(),

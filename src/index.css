@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+body,
+html {
+  overflow-x: hidden;
+}
+
+section {
+  overflow: hidden;
+}
+
 /** =================================================================
     css custom scrollbar styles
 **/
@@ -162,10 +171,6 @@
 }
 
 
-body,
-section {
-  overflow-x: hidden;
-}
 
 @layer components {
   .link {

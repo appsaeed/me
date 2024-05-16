@@ -5,9 +5,10 @@ import buildconfing from "./vite-config/build";
 import "./vite-config/global";
 import manifest from "./vite-config/manifest";
 import pwa from "./vite-config/pwa";
-
+process.env.VITE_BASENAME
 
 export default defineConfig({
+  base: process.env.VITE_BASENAME,
   plugins: [
     solidPlugin(),
     sitemap({

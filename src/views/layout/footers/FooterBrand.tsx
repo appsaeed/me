@@ -22,16 +22,20 @@ export default function FooterBrand({
         {title}
       </h2>
       <p class=" text-sm font-light my-6 max-sm:text-center">
-        We make web applications for your business or personal website as you are in
-        demand. Get started your project with us get a super fast website and long-time
-        support. Usually, we use the latest technology ( programming and tools ) and
-        always try to keep up to date the website or web application.
+        We make web applications for your business or personal website as you
+        are in demand. Get started your project with us get a super fast website
+        and long-time support. Usually, we use the latest technology (
+        programming and tools ) and always try to keep up to date the website or
+        web application.
         <br />
         <br />
         Manage your world easily and funnily get success growing!
       </p>
       <div class="flex justify-center sm:justify-start my-6">
-        <Link href={settings.url} class="flex items-center justify-center">
+        <Link
+          href={settings.homeURL("/")}
+          class="flex items-center justify-center"
+        >
           <Image {...logo.default} class="w-auto h-16" alt={settings.name} />
         </Link>
       </div>

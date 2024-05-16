@@ -1,6 +1,5 @@
 /* @refresh reload */
 
-
 import { render } from "solid-js/web";
 
 import { Router as BrowserRouter } from "@solidjs/router";
@@ -20,7 +19,7 @@ document
 
 export const Index = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter base={settings.basename}>
       <QueryClientProvider client={new QueryClient()}>
         <Routes />
       </QueryClientProvider>
@@ -28,5 +27,7 @@ export const Index = () => {
   );
 };
 //dom selector
-const maindom = document.body;
+const selector = `${import.meta.env.VITE_MAIN_DOM || "%VITE_MAIN_DOM%"}`;
+const maindom = document.querySelector(selector) || document.body;
+
 render(() => <Index />, maindom);

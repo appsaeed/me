@@ -1,7 +1,6 @@
-import assets from "../../assets/s";
-import Image from "../../components/Image";
-import ButtonGradient from "../../components/buttons/ButtonGradient";
-import { HtmlAttr } from "../../types/dom";
+import Image from "../../../components/Image";
+import ButtonGradient from "../../../components/buttons/ButtonGradient";
+import { HtmlAttr } from "../../../types/dom";
 
 export default function CardBusinessSection(props: HtmlAttr) {
   return (
@@ -24,7 +23,7 @@ export default function CardBusinessSection(props: HtmlAttr) {
         </div>
 
         <div class={""}>
-          <Image src={assets.payment_card} alt="billing" class="w-[100%] h-[100%]" />
+          <Image src={''} alt="billing" class="w-[100%] h-[100%]" />
         </div>
       </div>
     </section>

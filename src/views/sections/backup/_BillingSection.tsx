@@ -1,7 +1,6 @@
-import assets from "../../assets/s";
-import Image from "../../components/Image";
-import SectionHeader from "../../components/SectionHeader";
-import { HtmlAttr } from "../../types/dom";
+import Image from "../../../components/Image";
+import SectionHeader from "../../../components/SectionHeader";
+import { HtmlAttr } from "../../../types/dom";
 
 export default function BillingSection(props: HtmlAttr) {
   return (
@@ -10,7 +9,7 @@ export default function BillingSection(props: HtmlAttr) {
       <div class="grid grid-cols-1 sm:grid-cols-12">
         <div class={"sm:col-span-7"}>
           <Image
-            src={assets.billing}
+            src={''}
             alt="billing"
             class="w-[100%] h-[100%] relative z-[5]"
           />
@@ -33,12 +32,12 @@ export default function BillingSection(props: HtmlAttr) {
 
           <div class="flex justify-around gap-4 w-full mt-6">
             <Image
-              src={assets.apple_store}
+              src={''}
               alt="google_play"
               class="w-full h-auto object-contain cursor-pointer"
             />
             <Image
-              src={assets.googel_play}
+              src={''}
               alt="google_play"
               class="w-full h-auto object-contain cursor-pointer"
             />

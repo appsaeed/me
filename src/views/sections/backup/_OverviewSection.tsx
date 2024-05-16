@@ -1,5 +1,5 @@
 import { JSX } from "solid-js";
-import sections from "../../data/classNames/sections";
+import sections from "../../../data/classNames/sections";
 
 export default function OverviewSection(props: JSX.HTMLAttributes<HTMLElement>) {
   return (

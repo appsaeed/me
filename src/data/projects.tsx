@@ -59,6 +59,7 @@ export default [
   {
     name: "NPM Packages",
     title: "NPM Packages",
+    tags: ["Javascript package", "NPM Packages", "Vite Plugins"],
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Npm-logo.svg/1920px-Npm-logo.svg.png",
     link: "https://www.npmjs.com/package/utilies#other-packages",

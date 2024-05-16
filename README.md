@@ -1,6 +1,6 @@
-![GitHub Banner](assets/banner.jpg)
+![GitHub Banner](https://raw.githubusercontent.com/appsaeed/assets/main/me/banner.jpg)
 
-<h3>Hi <img src="assets/hello.gif" width="30" alt="hi" />, Nice to see you.</h3>
+<h3>Hi <img src="https://raw.githubusercontent.com/appsaeed/assets/main/emoji/hello.gif" width="30" alt="hi" />, Nice to see you.</h3>
 
 I'm Saeed, a Full Stack Web Application Developer with good expertise in JavaScript, React.js, Laravel, Headless Technology, and everything related to APIs. I also specialize in TailwindCSS, and WordPress, including themes, plugins, and Rest APIs. Currently, **I'm open to work and employment opportunities**.
 
@@ -66,58 +66,87 @@ I am currently working as a Freelancer so I am a Level Two seller on Fiverr, a h
         </tr>
     </thead>
     <tbody>
+
         <tr>
-            <td><a href="https://appsaeed.github.io/ftools" target="_blank">Fastest web tools</a></td>
-            <td>A simple web application tools specifically for web developers and might be use anyone for some work
-                liek image to text, ip lookup and many more.</td>
-            <td>Firebase, Tailwindcss, Reactjs, Typescript</td>
-        </tr>
-        <tr>
-            <td><a href="https://appsaeed.github.io/asc" target="_blank">AI Sources Creation</a></td>
             <td>
-                Revolutionize Content Creation with Our Web-Based AI Tool - Powered by WordPress, ReactJS, and TypeScript
-                <br>
-                Introducing our cutting-edge web-based AI tool, seamlessly integrated into the WordPress backend and brought to life with the dynamic UI design of ReactJS and TypeScript on the frontend. This powerhouse tool empowers users to effortlessly generate email content, craft engaging blogs, and create captivating articles, among many other possibilities
+                <a href="https://github.com/appsaeed/laravel-saas-app" target="_blank">Laravel SaaS Application</a>
+                <a href="https://saastask.onrender.com" target="_blank">demo link</a>
             </td>
-            <td>Wordpress, API, Reactjs, Typescript</td>
+            <td>Built a Laravel SaaS app with user/admin dashboards and a custom real-time chat that facilitates
+                seamless communication. I successfully tackled chat integration challenges through rigorous testing and
+                debugging, and implemented automated cron jobs to ensure smooth operation. The application also empowers
+                super admins with control over environment and settings.</td>
+            <td>Laravel | Blade | API</td>
         </tr>
+
+        ,
         <tr>
-            <td><a href="https://github.com/appsaeed/utilities-functions" target="_blank">Javascript package</a></td>
             <td>
-                Javascript utilities functions and methods for browser and nodejs to 10x faster developer experience |
-                Fast, generic JavaScript browser and some nodejs utility functions.
+                <a href="https://github.com/appsaeed/task" target="_blank">Pretty Task</a>
+                <a href="https://appsaeed.github.io/task/" target="_blank">demo link</a>
             </td>
-            <td>Javascript, utilities, functions, npm, package</td>
+            <td>Implemented a modern, scalable task management application using the latest tech stack: ReactJS,
+                TypeScript, and TailwindCSS. Leveraged Firebase's serverless architecture for efficient backend
+                operations, minimizing maintenance and enabling real-time data synchronization. Implemented server-side
+                push notifications with Node.js to ensure users receive instant task updates</td>
+            <td>Javascript | NodeJS | TypeScript | TailwindCSS</td>
         </tr>
+
+        ,
         <tr>
-            <td><a href="https://harvardedit.com" target="_blank">Harvard Edit</a></td>
             <td>
-                HarverdEdit: Your Premier WordPress Journal Website for Maintenance, Orders, Book Sales, and Writing
-                <br>
-                Welcome to HarverdEdit, the ultimate destination for your journaling needs, website maintenance, order reception, online book sales, and professional writing services. Our WordPress site is your one-stop solution for all things related to academic journals and creative content.
+                <a href="https://github.com/appsaeed/auxonic" target="_blank">Auxonic beta tools</a>
+                <a href="https://appsaeed.github.io/auxonic/" target="_blank">demo link</a>
             </td>
-            <td>Wordpress, Elementor, Code Snippets</td>
+            <td>This is a web-based developer toolkit built with React.js and TypeScript for lightning-fast performance.
+                It offers essential tools like image-to-text conversion and IP lookup, all in one convenient platform.
+                Firebase Authentication keeps things secure and lets you personalize your experience</td>
+            <td>Firebase | Tailwindcss | Reactjs | Typescript</td>
         </tr>
+
+        ,
         <tr>
-            <td><a href="https://portal.the247openhouse.com" target="_blank">openhouse</a></td>
             <td>
-                OpenHouse: A Full Stack Laravel Web Application for Enterprise Business
-                <br>
-                OpenHouse is a powerful Laravel full-stack web application designed to help enterprise businesses thrive online. This versatile application enables users to efficiently manage customer support through Twilio or other phone call auto-response services. With an array of advanced functionalities, OpenHouse is an indispensable tool for businesses looking to enhance their online presence
+                <a href="https://github.com/appsaeed/asc" target="_blank">AI Content Creation</a>
+                <a href="https://appsaeed.github.io/asc" target="_blank">demo link</a>
             </td>
-            <td>Laravel, Jquery, Twilio, API</td>
+            <td>Revolutionize Content Creation with the Web-Based AI Tool - Powered by WordPress, ReactJS, and
+                TypeScript seamlessly integrated into the WordPress backend and brought to life with the dynamic UI
+                design on the frontend. This powerhouse tool empowers users to effortlessly generate email content,
+                craft engaging blogs, and create captivating articles, among many other possibilities</td>
+            <td>Wordpress | API | React.JS | Typescript</td>
         </tr>
+
+        ,
         <tr>
-            <td><a href="https://appsaeed.github.io/static" target="_blank">Static Home</a></td>
-            <td>A static website for some showcase my work actually this website is build with html, css and bootstrap.
-                This website is basic only for showcase my work.</td>
-            <td>HTML, CSS Bootstrap, Javascript</td>
+            <td>
+                <a href="https://github.com/appsaeed/nodejs-course-streaming" target="_blank">NodeJS courses
+                    streaming</a>
+                <a href="#" target="_blank">demo link</a>
+            </td>
+            <td>Master Node.js interactively! This platform offers YouTube/Udemy-like features for students & teachers:
+                Watch lectures, build content & playlists, discuss concepts, track progress, leverage comments & likes.
+                Replay abilities empower teachers. Go beyond videos: Implement full-stack with Custom Model Queries
+                (toughest challenge, but aced it with Laravel knowledge!)</td>
+            <td>NodeJS | ExpressJS | EJS | Database</td>
         </tr>
+
+        ,
         <tr>
-            <td><a href="https://oxfordeditors.com" target="_blank">oxfordeditors</a></td>
-            <td>Oxford editors is simmilar to harvardedit but it has fast loading. This web application has built on
-                Laravel and Reactjs</td>
-            <td>Laravel, Rreactjs, API, Livewire</td>
+            <td>
+                <a href="https://github.com/appsaeed/utilies?tab=readme-ov-file#other-packages" target="_blank">NPM
+                    Packages</a>
+                <a href="https://www.npmjs.com/package/utilies#other-packages" target="_blank">demo link</a>
+            </td>
+            <td>
+                Published npm packages: (Javascript utility package) for JS utilities functions and methods to integrate
+                and enhance developer experiences in the development of an application faster.
+                Open-Source Contributor: exploring and contributing to open source javascript, react, PHP, and laravel
+                projects.
+                Vite.js Plugins: Developed (vite-svg, vite-sitemap) for SVG integration & sitemap generation. (Focuses
+                on Vite and key functionalities)
+            </td>
+            <td>Javascript package | NPM Packages | Vite Plugins</td>
         </tr>
     </tbody>
 

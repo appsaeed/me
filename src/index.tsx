@@ -8,7 +8,39 @@ import { deviceTheme, getThemeStore, setThemeStore } from "utilies";
 import Routes from "./Router";
 import settings from "./app/settings";
 import "./assets/css/image.css";
+import projects from "./data/projects";
 import "./index.css";
+
+console.log(`
+<table>
+    <thead>
+        <tr style="border: none;">
+            <td style="min-width:160px"><b>Project name</b></td>
+            <td><b>Description</b></td>
+            <td><b>Tags</b></td>
+        </tr>
+    </thead>
+    <tbody>
+        ${projects.map((project) => {
+          return `
+          <tr>
+            <td>
+              <a href="${project.github_link || "#"}" target="_blank">${
+            project.title
+          }</a>
+              <a href="${project.link || "#"}" target="_blank">demo link</a>    
+          </td>
+            <td>${project.description}</td>
+            <td>${project.tags?.join(" | ")}</td>
+        </tr>
+          
+          `;
+        })}
+    </tbody>
+
+</table>
+
+`);
 
 if (!getThemeStore()) setThemeStore(deviceTheme);
 

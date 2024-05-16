@@ -1,4 +1,4 @@
-import assets from "../../assets";
+import assets from "../../assets/s";
 import Image from "../../components/Image";
 import SectionHeader from "../../components/SectionHeader";
 import { HtmlAttr } from "../../types/dom";

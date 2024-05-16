@@ -1,7 +1,7 @@
 import { Link } from "@solidjs/router";
 import { For } from "solid-js";
 import settings from "../../../app/settings";
-import sections from "../../../data/className/sections";
+import sections from "../../../data/classNames/sections";
 import social_media from "../../../data/social_media";
 
 export default function FooterBottom() {

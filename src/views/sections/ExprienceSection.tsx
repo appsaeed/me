@@ -1,5 +1,5 @@
 import { JSX } from "solid-js";
-import sections from "../../data/className/sections";
+import sections from "../../data/classNames/sections";
 
 export default function ExprienceSection(props: JSX.HTMLAttributes<HTMLElement>) {
   return (

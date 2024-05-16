@@ -1,6 +1,6 @@
 import { FiCheck } from "solid-icons/fi";
 import { For } from "solid-js";
-import assets from "../../assets";
+import img_robot from '../../assets/images/robot.png';
 import Image from "../../components/Image";
 import SectionHeader from "../../components/SectionHeader";
 
@@ -54,7 +54,7 @@ export default function AISections(props: HtmlAttr) {
         </div>
 
         <Animate.div motion="slideInRight" class={`w-full`}>
-          <Image src={assets.roboto} />
+          <Image src={img_robot} />
         </Animate.div>
       </div>
     </section>

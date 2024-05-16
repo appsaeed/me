@@ -1,6 +1,6 @@
 import { Link } from "@solidjs/router";
 import { For } from "solid-js";
-import sections from "../../../data/className/sections";
+import sections from "../../../data/classNames/sections";
 import { Divattr } from "../../../types/dom";
 
 type FooterLinksProps = {

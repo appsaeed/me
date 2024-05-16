@@ -4,7 +4,7 @@ import { For, createSignal, onCleanup, onMount } from "solid-js";
 import { addSlash, avatar, getThemeStore, setThemeStore } from "utilies";
 import settings from "../../app/settings";
 import Image from "../../components/Image";
-import sections from "../../data/className/sections";
+import sections from "../../data/classNames/sections";
 import menus from "../../data/menus";
 import user from "../../data/user";
 import BrandLogo from "./BrandLogo";

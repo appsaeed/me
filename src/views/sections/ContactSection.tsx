@@ -6,7 +6,7 @@ import { createStore } from "solid-js/store";
 import { isMail } from "utilies";
 import Animate from "../../animation";
 import Toast from "../../app/Toast";
-import assets from "../../assets";
+import img_support from '../../assets/images/support-animate.svg';
 import Image from "../../components/Image";
 import InputwithLabel from "../../components/InputwithLabel";
 import SectionHeader from "../../components/SectionHeader";
@@ -75,7 +75,7 @@ export default function ContactSection(props: HtmlAttr) {
       <div class="grid grid-cols-1 sm:grid-cols-2">
         {/* secound part */}
         <Animate.div motion="slideInLeft" class="mx-auto">
-          <Image class="w-full h-full" src={assets.support} />
+          <Image class="w-full h-full" src={img_support} />
         </Animate.div>
 
         {/* form/ */}

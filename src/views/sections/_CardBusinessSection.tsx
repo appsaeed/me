@@ -1,4 +1,4 @@
-import assets from "../../assets";
+import assets from "../../assets/s";
 import Image from "../../components/Image";
 import ButtonGradient from "../../components/buttons/ButtonGradient";
 import { HtmlAttr } from "../../types/dom";

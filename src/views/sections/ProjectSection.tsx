@@ -5,7 +5,7 @@ import Animate from "../../animation";
 import Image from "../../components/Image";
 import SectionDescription from "../../components/SectionDescription";
 import SectionHeader from "../../components/SectionHeader";
-import sections from "../../data/className/sections";
+import sections from "../../data/classNames/sections";
 import projects from "../../data/projects";
 
 export default function ProjectSection(props: JSX.HTMLAttributes<HTMLElement>) {

@@ -5,7 +5,7 @@ import { loadImage, random } from "utilies";
 import Animate from "../../animation";
 import { createAnimateStyle } from "../../animation/Animator";
 import { AnimationMotion } from "../../animation/type";
-import assets from "../../assets";
+import bg_hero from '../../assets/bg-hero.jpeg';
 import { HtmlAttr } from "../../types/dom";
 
 export default function (props: HtmlAttr) {
@@ -114,9 +114,9 @@ export default function (props: HtmlAttr) {
   return (
     <section
       ref={(hero) => {
-        loadImage(assets.bg_hero).then(() => {
+        loadImage(bg_hero).then(() => {
           hero.classList.remove("bg-blurr");
-          hero.setAttribute("style", `background-image: url(${assets.bg_hero});`);
+          hero.setAttribute("style", `background-image: url(${bg_hero});`);
         });
       }}
       {...props}

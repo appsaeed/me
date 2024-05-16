@@ -1,6 +1,6 @@
 import settings from "../app/settings";
 import SectionHeader from "../components/SectionHeader";
-import sections from "../data/className/sections";
+import sections from "../data/classNames/sections";
 import BlogWrapper from "../views/layout/BlogWrapper";
 import Footer from "../views/layout/Footer";
 import Navbar from "../views/layout/Navbar";

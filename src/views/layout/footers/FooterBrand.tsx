@@ -2,7 +2,7 @@ import { Link } from "@solidjs/router";
 import settings from "../../../app/settings";
 
 import Image from "../../../components/Image";
-import sections from "../../../data/className/sections";
+import sections from "../../../data/classNames/sections";
 import logo from "../../../data/logo";
 import { Divattr } from "../../../types/dom";
 type FooterBrandProps = {

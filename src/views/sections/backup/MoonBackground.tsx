@@ -2,11 +2,11 @@ import { FiDownload } from "solid-icons/fi";
 //@ts-ignore
 import { onCleanup, onMount } from "solid-js";
 import { random } from "utilies";
-import Animate from "../../animation";
-import { createAnimateStyle } from "../../animation/Animator";
-import { AnimationMotion } from "../../animation/type";
-import { cn } from "../../app/utilies";
-import { HtmlAttr } from "../../types/dom";
+import Animate from "../../../animation";
+import { createAnimateStyle } from "../../../animation/Animator";
+import { AnimationMotion } from "../../../animation/type";
+import { HtmlAttr } from "../../../types/dom";
+import "./../../components/moon/moon.css";
 
 export default function (props: HtmlAttr) {
   let slides: HTMLParagraphElement | undefined;
@@ -120,15 +120,29 @@ export default function (props: HtmlAttr) {
 
   return (
     <section
-      {...props}
-      class={cn(
-        props.class,
-        `px-10 bg-fixed overflow-hidden max-w-fit`,
-        "pattern-page"
-      )}
+      class={`bg-blurr bg-cover bg-left-top px-10 bg-fixed overflow-hidden max-w-fit`}
     >
+      {/* start background images  */}
+      <img
+        class="animate-spin"
+        style={`height: 100px;
+                width: 100px;
+                position: absolute;
+                z-index: 3;
+                right: ${random(10, 90)}%;
+                top: 100px;
+                animation-duration: 100s;
+                `}
+        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/moon2.png"
+        alt=""
+      />
+      <div class="stars"></div>
+      <div class="twinkling"></div>
+      <div class="clouds"></div>
+      {/* start background images  */}
+
       <div class="w-full mx-auto text-center pt-28 pb-16">
-        <Animate.h1 class="mb-20 text-3xl font-extrabold">
+        <Animate.h1 class="mb-20 text-3xl font-extrabold   text-slate-300">
           I'm <span class=" font-bold text-6xl">Saeed</span> Hossen
         </Animate.h1>
 
@@ -150,7 +164,7 @@ export default function (props: HtmlAttr) {
 
         <div
           ref={slides}
-          class="relative w-full mb-20 text-4xl font-extrabold h-10"
+          class="relative w-full mb-20 text-4xl font-extrabold  text-white h-10"
         >
           <p class="absolute top-full left-0 right-0">
             Full-Stack web development

@@ -2,6 +2,102 @@
 @tailwind components;
 @tailwind utilities;
 
+.prattern-coat {
+  background:
+    radial-gradient(black 15%, transparent 16%) 0 0,
+    radial-gradient(black 15%, transparent 16%) 8px 8px,
+    radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 0 1px,
+    radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 8px 9px;
+  background-color: #282828;
+  background-size: 16px 16px;
+}
+
+
+
+@media (prefers-color-scheme: dark) {
+  .pattern-page {
+    --s: 50px;
+    --c: #191b22;
+    --_s: calc(2*var(--s)) calc(2*var(--s));
+    --_g: 35.36% 35.36% at;
+    --_c: #0000 66%, #20222a 68% 70%, #0000 72%;
+    background:
+      radial-gradient(var(--_g) 100% 25%, var(--_c)) var(--s) var(--s)/var(--_s),
+      radial-gradient(var(--_g) 0 75%, var(--_c)) var(--s) var(--s)/var(--_s),
+      radial-gradient(var(--_g) 100% 25%, var(--_c)) 0 0/var(--_s),
+      radial-gradient(var(--_g) 0 75%, var(--_c)) 0 0/var(--_s),
+      repeating-conic-gradient(var(--c) 0 25%, #0000 0 50%) 0 0/var(--_s),
+      radial-gradient(var(--_c)) 0 calc(var(--s)/2)/var(--s) var(--s) var(--c);
+    background-attachment: fixed;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .pattern-page {
+    --s: 50px;
+    --c: #f5f5f5;
+    /* Adjusted light theme background color */
+    --_s: calc(2*var(--s)) calc(2*var(--s));
+    --_g: 35.36% 35.36% at;
+    --_c: #fff 66%, #f0f0f0 68% 70%, #fff 72%;
+    /* Light theme color stops */
+
+    background: radial-gradient(var(--_g) 100% 25%, var(--_c)) var(--s) var(--s)/var(--_s),
+      radial-gradient(var(--_g) 0 75%, var(--_c)) var(--s) var(--s)/var(--_s),
+      radial-gradient(var(--_g) 100% 25%, var(--_c)) 0 0/var(--_s),
+      radial-gradient(var(--_g) 0 75%, var(--_c)) 0 0/var(--_s),
+      repeating-conic-gradient(var(--c) 0 25%, #fff 0 50%) 0 0/var(--_s),
+      radial-gradient(var(--_c)) 0 calc(var(--s)/2)/var(--s) var(--s) var(--c);
+    background-attachment: fixed;
+  }
+}
+
+
+
+
+
+
+.pattern-dark-circle {
+  --u: 2.5vmin;
+  --c1: hsl(0deg 0% 0%);
+  --c2: hsl(212deg 4% 9%);
+  --c3: hsl(212deg 7% 36%);
+  --gp: 50%/calc(var(--u) * 5) calc(var(--u) * 10);
+  --bp: calc(var(--u) * -2.5) calc(var(--u) * -5);
+  height: 100vh;
+  --bg:
+    radial-gradient(circle at 50% 25%, var(--c2) 23%, #fff0 25% 100%) var(--gp),
+    conic-gradient(from 270deg at 34% 46%, var(--c2) 0 12.5%, #fff0 0 100%) var(--gp),
+    conic-gradient(from 45deg at 66% 46%, var(--c2) 0 12.5%, #fff0 0 100%) var(--gp),
+    conic-gradient(from 180deg at 50% 80%, var(--c2) 0 12.5%, #fff0 0 100%) var(--gp),
+    conic-gradient(from 135deg at 50% 80%, var(--c2) 0 12.5%, #fff0 0 100%) var(--gp),
+    conic-gradient(from 0deg at 0% 20%, var(--c2) 0 12.5%, #fff0 0 100%) var(--gp),
+    conic-gradient(from -45deg at 100% 20%, var(--c2) 0 12.5%, #fff0 0 100%) var(--gp),
+    linear-gradient(180deg, var(--c2) 0 4.5%, #fff0 0 45.25%, var(--c2) 0 50%, #fff0 0% 100%) var(--gp),
+    radial-gradient(circle at 50% 25%, #fff0 0 25%, var(--c2) 26% 32%, #fff0 0 100%) var(--gp),
+    linear-gradient(165deg, var(--c3) -15%, var(--c1) 44%, #fff0 0 100%) var(--gp),
+    linear-gradient(180deg, var(--c1) 50%, #fff0 0 100%) var(--gp);
+  background: var(--bg), var(--bg);
+  background-position:
+    var(--bp), var(--bp), var(--bp), var(--bp), var(--bp), var(--bp), var(--bp), var(--bp), var(--bp), var(--bp), var(--bp),
+    0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0;
+  background-color: var(--c2);
+}
+
+.pattearn-land {
+  --units: 1.5vmax;
+  --brick1: #191b22;
+  --brick2: #191b22;
+  --lines: #565656;
+  --gp-ln: 50%/calc(var(--units) * 10) calc(var(--units) * 5);
+  --gp-cn: 50%/calc(var(--units) * 5) calc(var(--units) * 5);
+  height: 100vh;
+  background:
+    repeating-conic-gradient(from 90deg at 95% 55%, var(--lines) 0% 25%, #fff0 0% 100%) var(--gp-cn),
+    repeating-linear-gradient(180deg, var(--lines) 0 5%, #fff0 0 50%, var(--lines) 0 55%, var(--brick2) 0 100%) var(--gp-ln),
+    repeating-linear-gradient(90deg, var(--brick1) 0 47.5%, var(--lines) 0 50%, var(--brick1) 0 97.5%, var(--lines) 0 100%) var(--gp-ln);
+}
+
 /*
  */
 .transition-opacity {
@@ -27,6 +123,7 @@ section {
   .link {
     @apply text-[#8ab4f8] hover:underline cursor-pointer;
   }
+
   .border-light {
     @apply border-b dark:border-slate-700;
   }
@@ -35,6 +132,7 @@ section {
 ::-webkit-scrollbar {
   width: 6px;
 }
+
 ::-webkit-scrollbar-track {
   background-color: gray;
 }
@@ -59,12 +157,10 @@ section {
  */
 
 :root {
-  --black-gradient: linear-gradient(
-    144.39deg,
-    #ffffff -278.56%,
-    #6d6d6d -78.47%,
-    #11101d 91.61%
-  );
+  --black-gradient: linear-gradient(144.39deg,
+      #ffffff -278.56%,
+      #6d6d6d -78.47%,
+      #11101d 91.61%);
   --card-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
 }
 
@@ -73,15 +169,13 @@ section {
 }
 
 .text-gradient {
-  background: radial-gradient(
-    64.18% 64.18% at 71.16% 35.69%,
-    #def9fa 0.89%,
-    #bef3f5 17.23%,
-    #9dedf0 42.04%,
-    #7de7eb 55.12%,
-    #5ce1e6 71.54%,
-    #33bbcf 100%
-  );
+  background: radial-gradient(64.18% 64.18% at 71.16% 35.69%,
+      #def9fa 0.89%,
+      #bef3f5 17.23%,
+      #9dedf0 42.04%,
+      #7de7eb 55.12%,
+      #5ce1e6 71.54%,
+      #33bbcf 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -89,41 +183,33 @@ section {
 }
 
 .bg-blue-gradient {
-  background: linear-gradient(
-    157.81deg,
-    #def9fa -43.27%,
-    #bef3f5 -21.24%,
-    #9dedf0 12.19%,
-    #7de7eb 29.82%,
-    #5ce1e6 51.94%,
-    #33bbcf 90.29%
-  );
+  background: linear-gradient(157.81deg,
+      #def9fa -43.27%,
+      #bef3f5 -21.24%,
+      #9dedf0 12.19%,
+      #7de7eb 29.82%,
+      #5ce1e6 51.94%,
+      #33bbcf 90.29%);
 }
 
 .bg-black-gradient {
-  background: linear-gradient(
-    144.39deg,
-    #ffffff -278.56%,
-    #6d6d6d -78.47%,
-    #11101d 91.61%
-  );
+  background: linear-gradient(144.39deg,
+      #ffffff -278.56%,
+      #6d6d6d -78.47%,
+      #11101d 91.61%);
 }
 
 .bg-black-gradient-2 {
-  background: linear-gradient(
-    -168.39deg,
-    #ffffff -278.56%,
-    #6d6d6d -78.47%,
-    #11101d 91.61%
-  );
+  background: linear-gradient(-168.39deg,
+      #ffffff -278.56%,
+      #6d6d6d -78.47%,
+      #11101d 91.61%);
 }
 
 .bg-gray-gradient {
-  background: linear-gradient(
-    153.47deg,
-    rgba(255, 255, 255, 0) -341.94%,
-    #14101d 95.11%
-  );
+  background: linear-gradient(153.47deg,
+      rgba(255, 255, 255, 0) -341.94%,
+      #14101d 95.11%);
 }
 
 .bg-discount-gradient {
@@ -144,6 +230,7 @@ section {
     -webkit-transform: translateY(100px);
     transform: translateY(100px);
   }
+
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
@@ -155,6 +242,7 @@ section {
     -webkit-transform: translateY(100px);
     transform: translateY(100px);
   }
+
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);

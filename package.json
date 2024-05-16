@@ -18,9 +18,11 @@
     "@solidjs/router": "^0.8.3",
     "@sweetalert2/theme-dark": "^5.0.15",
     "@tanstack/solid-query": "^4.35.0",
+    "clsx": "^2.1.1",
     "solid-icons": "^1.0.11",
     "solid-js": "^1.7.8",
     "sweetalert2": "^11.7.23",
+    "tailwind-merge": "^2.3.0",
     "utilies": "^1.0.19"
   },
   "devDependencies": {

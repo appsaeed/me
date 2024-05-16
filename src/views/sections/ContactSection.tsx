@@ -5,6 +5,7 @@ import { createSignal } from "solid-js";
 import { createStore } from "solid-js/store";
 import { isMail } from "utilies";
 import Animate from "../../animation";
+import Toast from "../../app/Toast";
 import assets from "../../assets";
 import Image from "../../components/Image";
 import InputwithLabel from "../../components/InputwithLabel";
@@ -12,7 +13,6 @@ import SectionHeader from "../../components/SectionHeader";
 import TextareaWithLabel from "../../components/TextareaWithLabel";
 import { HtmlAttr } from "../../types/dom";
 import { FormEvent } from "../../types/event";
-import Toast from "../../utils/Toast";
 
 interface FormFields {
   name: string;

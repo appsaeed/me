@@ -9,7 +9,7 @@ type Props = {
     id?: string,
 }
 
-export default function FBMessengers(props: Props) {
+export default function FbMessenger(props: Props) {
     const { xfbml = true, version = 'v18.0', page_id = '', attribution = 'biz_inbox', id = 'fb-customer-chat', className = '' } = props;
 
     onMount(() => {

@@ -3,12 +3,12 @@ import { BsLink45deg, BsPlus, BsShare } from "solid-icons/bs";
 import { For, createSignal } from "solid-js";
 import { shareToSocial } from "utilies";
 import { createAnimate } from "../../animation/Animator";
+import Toast from "../../app/Toast";
 import settings from "../../app/settings";
 import Image from "../../components/Image";
 import SectionHeader from "../../components/SectionHeader";
 import projects from "../../data/projects";
 import { HtmlAttr } from "../../types/dom";
-import Toast from "../../utils/Toast";
 
 export default function ExploreSection(props: HtmlAttr) {
     const [active, setActive] = createSignal("");

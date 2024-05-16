@@ -7,6 +7,6 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export function pathJoin(...paths: Array<any>) {
-  return paths.map(unSlash).join("/");
+  return paths.filter(Boolean).map(unSlash).join("/");
 }
 export const urlJoin = pathJoin;

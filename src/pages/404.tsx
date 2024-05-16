@@ -1,5 +1,4 @@
 import { Link } from "@solidjs/router";
-import settings from "../app/settings";
 
 export default function Nopage() {
   return (
@@ -51,7 +50,7 @@ export default function Nopage() {
             </button>
 
             <Link
-              href={settings.homeURL("/")}
+              href={"/"}
               class="w-1/2 px-5 py-2 text-sm tracking-wide text-white transition-colors duration-200 bg-blue-500 rounded-lg shrink-0 sm:w-auto hover:bg-blue-600 dark:hover:bg-blue-500 dark:bg-blue-600"
             >
               Take me home

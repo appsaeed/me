@@ -1,7 +1,6 @@
 import { FiDownload } from "solid-icons/fi";
 //@ts-ignore
 import { onCleanup, onMount } from "solid-js";
-import { random } from "utilies";
 import Animate from "../../animation";
 import { createAnimateStyle } from "../../animation/Animator";
 import { AnimationMotion } from "../../animation/type";
@@ -13,65 +12,9 @@ export default function (props: HtmlAttr) {
 
   onMount(() => {
     if (slides) {
-      const timer = 6000;
+      const timer = 8000;
       const children = [...slides.children];
-      const animates = [
-        "bounce",
-        "flash",
-        "pulse",
-        "rubberBand",
-        "shake",
-        "swing",
-        "tada",
-        "jello",
-        "heartBeat",
-        "bounceInDown",
-        "bounceInLeft",
-        "bounceInRight",
-        "bounceInUp",
-        "bounceOut",
-        "bounceOutDown",
-        "bounceOutLeft",
-        "bounceOutRight",
-        "bounceOutUp",
-        "fadeIn",
-        "fadeInDown",
-        "fadeInLeft",
-        "fadeInRight",
-        "fadeInUp",
-        "fadeOut",
-        "fadeOutDown",
-        "fadeOutLeft",
-        "fadeOutRight",
-        "fadeOutUp",
-        "fadeOutUpBig",
-        "flipInX",
-        "flipOutX",
-        "flipOutY",
-        "lightSpeedIn",
-        "lightSpeedOut",
-        "slideInUp",
-        "slideInDown",
-        "slideInLeft",
-        "slideInRight",
-        "slideOutUp",
-        "slideOutDown",
-        "slideOutLeft",
-        "slideOutRight",
-        "zoomIn",
-        "zoomInDown",
-        "zoomInLeft",
-        "zoomInRight",
-        "zoomInUp",
-        "zoomOutDown",
-        "zoomOutLeft",
-        "zoomOutRight",
-        "zoomOutUp",
-        "hinge",
-        "jackInTheBox",
-        "rollInOut",
-      ] as const;
-      const animateName: AnimationMotion = animates[random(0, animates.length)];
+      const animateName: AnimationMotion = "bounceInOutUp";
       const duration = `${timer}ms`;
 
       function hideChildren(child: Element) {
@@ -84,7 +27,6 @@ export default function (props: HtmlAttr) {
         animate: AnimationMotion,
         elm: Element | undefined | null
       ) {
-        console.log(animate);
         if (elm && elm?.tagName) {
           const getStyle =
             elm.getAttribute("style")?.replace("visibility:hidden;", "") || "";
@@ -106,10 +48,7 @@ export default function (props: HtmlAttr) {
       const interval = setInterval(() => {
         const animateElm = document.querySelector('[data-animate="true"]');
         slideHide(animateElm);
-        slideShow(
-          animates[random(0, animateName.length)],
-          animateElm?.nextElementSibling || children[0]
-        );
+        slideShow(animateName, animateElm?.nextElementSibling || children[0]);
       }, timer);
 
       onCleanup(() => {
@@ -120,7 +59,11 @@ export default function (props: HtmlAttr) {
 
   return (
     <section
-      class={cn(`pattern-page px-10 bg-fixed overflow-hidden max-w-fit`)}
+      {...props}
+      class={cn(
+        `pattern-page px-10 bg-fixed overflow-hidden max-w-fit`,
+        props.class
+      )}
     >
       <div class="w-full mx-auto text-center pt-28 pb-16">
         <Animate.h1 class="mb-20 text-3xl font-extrabold   text-slate-300">

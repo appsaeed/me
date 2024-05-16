@@ -431,6 +431,81 @@
   }
 }
 
+@keyframes bounceOutDown {
+  20% {
+    transform: translate3d(0, 10px, 0);
+  }
+
+  40%,
+  45% {
+    opacity: 1;
+    transform: translate3d(0, -20px, 0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(0, 2000px, 0);
+  }
+}
+
+@keyframes bounceInOutDown {
+
+  0%,
+  60%,
+  75%,
+  90%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(0, 25px, 0);
+  }
+
+  75% {
+    transform: translate3d(0, -10px, 0);
+  }
+
+  50% {
+    transform: translate3d(0, 5px, 0);
+  }
+
+  to {
+    transform: none;
+  }
+
+  20% {
+    transform: translate3d(0, 10px, 0);
+  }
+
+  40%,
+  45% {
+    opacity: 1;
+    transform: translate3d(0, -20px, 0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(0, 2000px, 0);
+  }
+
+
+}
+
+.bounceInOutDown {
+  animation-name: bounceInOutDown;
+}
+
+.bounceOutDown {
+  animation-name: bounceOutDown;
+}
+
 .bounceInDown {
   animation-name: bounceInDown;
 }
@@ -542,10 +617,6 @@
   }
 }
 
-.bounceInUp {
-  animation-name: bounceInUp;
-}
-
 @keyframes bounceOut {
   20% {
     transform: scale3d(0.9, 0.9, 0.9);
@@ -563,30 +634,67 @@
   }
 }
 
-.bounceOut {
-  animation-name: bounceOut;
-}
+@keyframes bounceInOutUp {
 
-@keyframes bounceOutDown {
-  20% {
-    transform: translate3d(0, 10px, 0);
+  0%,
+  60%,
+  75%,
+  90%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
   }
 
-  40%,
-  45% {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 3000px, 0);
+  }
+
+  60% {
     opacity: 1;
     transform: translate3d(0, -20px, 0);
   }
 
+  75% {
+    transform: translate3d(0, 10px, 0);
+  }
+
+  90% {
+    transform: translate3d(0, -5px, 0);
+  }
+
+  to {
+    transform: translateZ(0);
+  }
+
+  20% {
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+
+  50%,
+  55% {
+    opacity: 1;
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
   to {
     opacity: 0;
-    transform: translate3d(0, 2000px, 0);
+    transform: scale3d(0.3, 0.3, 0.3);
   }
 }
 
-.bounceOutDown {
-  animation-name: bounceOutDown;
+.bounceInOutUp {
+  animation-name: bounceInOutUp;
 }
+
+.bounceInUp {
+  animation-name: bounceInUp;
+}
+
+
+.bounceOut {
+  animation-name: bounceOut;
+}
+
 
 @keyframes bounceOutLeft {
   20% {

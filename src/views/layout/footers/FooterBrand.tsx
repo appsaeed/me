@@ -32,10 +32,7 @@ export default function FooterBrand({
         Manage your world easily and funnily get success growing!
       </p>
       <div class="flex justify-center sm:justify-start my-6">
-        <Link
-          href={settings.homeURL("/")}
-          class="flex items-center justify-center"
-        >
+        <Link href={"/"} class="flex items-center justify-center">
           <Image {...logo.default} class="w-auto h-16" alt={settings.name} />
         </Link>
       </div>

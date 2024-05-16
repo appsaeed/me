@@ -16,7 +16,7 @@ export default function License() {
           <h1 class="text-4xl mb-4"> Privacy Policy by Saeed Hossen</h1>
           <p>
             At {settings.name}, accessible from{" "}
-            <Link class="link" href={settings.homeURL("/")}>
+            <Link class="link" href={"/"}>
               {settings.name}
             </Link>
             , one of our main priorities is the privacy of our visitors. This
@@ -24,12 +24,12 @@ export default function License() {
             collected and recorded by Saeed Hossen and how we use it. If you
             have additional questions or require more information about our
             Privacy Policy, do not hesitate to{" "}
-            <Link href={settings.homeURL("#contact")}>contact us</Link>.This
-            Privacy Policy applies only to our online activities and is valid
-            for visitors to our website with regards to the information that
-            they shared and/or collect in Learn With Rabbil. This policy is not
-            applicable to any information collected offline or via channels
-            other than this website.
+            <Link href={"/#contact"}>contact us</Link>.This Privacy Policy
+            applies only to our online activities and is valid for visitors to
+            our website with regards to the information that they shared and/or
+            collect in Learn With Rabbil. This policy is not applicable to any
+            information collected offline or via channels other than this
+            website.
           </p>
           <h3 class="text-3xl my-4">Consent</h3>
           <p>

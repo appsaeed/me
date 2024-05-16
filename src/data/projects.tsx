@@ -1,64 +1,73 @@
 import asc from "../assets/projects/asc.png";
 import ftools from "../assets/projects/ftools.png";
-import harvaredit from "../assets/projects/harvardedit.png";
-import oxfrodeditors from "../assets/projects/oxfordeditor.png";
-import static_home from "../assets/projects/static-home.png";
-import openhouse from "../assets/projects/the247openhouse.png";
 
 export default [
   {
-    name: "ASC",
-    title: "AI Sources Creation",
+    name: "Laravel SaaS Application",
+    title: "Laravel SaaS Application",
+    image:
+      "https://raw.githubusercontent.com/appsaeed/assets/main/laravel-saas-app/Dashboard-Laravel-saas-task-application.png",
+    type: "project",
+    job_type: "Client project",
+    tags: ["Laravel", "Blade", "API"],
+    link: "https://saastask.onrender.com",
+    github_link: "https://github.com/appsaeed/laravel-saas-app",
+    description: `Built a Laravel SaaS app with user/admin dashboards and a custom real-time chat that facilitates seamless communication. I successfully tackled chat integration challenges through rigorous testing and debugging, and implemented automated cron jobs to ensure smooth operation. The application also empowers super admins with control over environment and settings.`,
+  },
+  {
+    name: "Pretty Task",
+    title: "Pretty Task",
+    image:
+      "https://raw.githubusercontent.com/appsaeed/assets/main/projects/my-task/my-task-light.png",
+    type: "project",
+    job_type: "Open Source",
+    tags: ["Javascript", "NodeJS", "TypeScript", "TailwindCSS"],
+    link: "https://appsaeed.github.io/task/",
+    github_link: "https://github.com/appsaeed/task",
+    description: `Implemented a modern, scalable task management application using the latest tech stack: ReactJS, TypeScript, and TailwindCSS. Leveraged Firebase's serverless architecture for efficient backend operations, minimizing maintenance and enabling real-time data synchronization. Implemented server-side push notifications with Node.js to ensure users receive instant task updates`,
+  },
+
+  {
+    name: "Auxonic",
+    title: "Auxonic beta tools",
+    image: ftools,
+    description: `This is a web-based developer toolkit built with React.js and TypeScript for lightning-fast performance. It offers essential tools like image-to-text conversion and IP lookup, all in one convenient platform. Firebase Authentication keeps things secure and lets you personalize your experience`,
+    tags: ["Firebase", "Tailwindcss", "Reactjs", "Typescript"],
+    link: "https://appsaeed.github.io/auxonic/",
+    github_link: "https://github.com/appsaeed/auxonic",
+  },
+
+  {
+    name: "AI Content Creation",
+    title: "AI Content Creation",
     image: asc,
-    description: `Revolutionize Content Creation with Our Web-Based AI Tool - Powered by WordPress, ReactJS, and TypeScript Introducing our cutting-edge web-based AI tool, seamlessly integrated into the WordPress backend and brought to life with the dynamic UI design of ReactJS and TypeScript on the frontend. This powerhouse tool empowers users to effortlessly generate email content, craft engaging blogs, and create captivating articles, among many other possibilities`,
-    tags: ["Wordpress", "API", "React Js", "Typescript"],
+    description: `Revolutionize Content Creation with the Web-Based AI Tool - Powered by WordPress, ReactJS, and TypeScript seamlessly integrated into the WordPress backend and brought to life with the dynamic UI design on the frontend. This powerhouse tool empowers users to effortlessly generate email content, craft engaging blogs, and create captivating articles, among many other possibilities`,
+    tags: ["Wordpress", "API", "React.JS", "Typescript"],
     link: "https://appsaeed.github.io/asc",
     github_link: "https://github.com/appsaeed/asc",
   },
   {
-    name: "Ftools",
-    title: "Fastest web tools",
-    image: ftools,
-    description: `A simple web application tools specifically for web developers and might be use anyone for some work liek image to text, ip lookup and many more.`,
-    tags: ["Firebase", "Tailwindcss", "Reactjs", "Typescript"],
-    link: "https://appsaeed.github.io/ftools",
-    github_link: "https://github.com/appsaeed/ftools",
+    name: "NodeJS courses streaming",
+    title: "NodeJS courses streaming",
+    image:
+      "https://raw.githubusercontent.com/appsaeed/assets/main/projects/nodejs-courses/nodejs-course-streamline-Home.png",
+    tags: ["NodeJS", "ExpressJS", "EJS", "Database"],
+    link: "",
+    github_link: "https://github.com/appsaeed/nodejs-course-streaming",
+    description: `Master Node.js interactively! This platform offers YouTube/Udemy-like features for students & teachers: Watch lectures, build content & playlists, discuss concepts, track progress, leverage comments & likes. Replay abilities empower teachers. Go beyond videos: Implement full-stack with Custom Model Queries (toughest challenge, but aced it with Laravel knowledge!)`,
   },
   {
-    name: "Harvardedit",
-    title: "Harvard Edit",
-    image: harvaredit,
-    description: `HarverdEdit: Your Premier WordPress Journal Website for Maintenance, Orders, Book Sales, and Writing Welcome to HarverdEdit, the ultimate destination for your journaling needs, website maintenance, order reception, online book sales, and professional writing services. Our WordPress site is your one-stop solution for all things related to academic journals and creative content.`,
-    tags: ["Wordpress", "Elementor", "Code Snippets"],
-    link: "https://harvardedit.com",
-    github_link: "https://github.com/appsaeed/",
-  },
-  {
-    name: "openhouse",
-    title: "openhouse",
-    image: openhouse,
-    description: `OpenHouse: A Full Stack Laravel Web Application for Enterprise Business
-    OpenHouse is a powerful Laravel full-stack web application designed to help enterprise businesses thrive online. This versatile application enables users to efficiently manage customer support through Twilio or other phone call auto-response services. With an array of advanced functionalities, OpenHouse is an indispensable tool for businesses looking to enhance their online presence`,
-    tags: ["Laravel", "Jquery", "Twilio", "API"],
-    link: "https://portal.the247openhouse.com",
-    github_link: "https://github.com/appsaeed",
-  },
-  {
-    name: "Static Home",
-    title: "Static Home",
-    image: static_home,
-    description: `A static website for some showcase my work actually this website is build with html, css and bootstrap. This website is basic only for showcase my work.`,
-    tags: ["HTML", "CSS", "Bootstrap", "Javascript"],
-    link: "https://appsaeed.github.io/static",
-    github_link: "https://github.com/appsaeed",
-  },
-  {
-    name: "Oxford Editors",
-    title: "OxfordEditors",
-    image: oxfrodeditors,
-    description: `Oxford editors is simmilar to harvardedit but it has fast loading. This web application has built on Laravel and React Js`,
-    tags: ["Laravel", "Rreactjs", "API", "Livewire"],
-    link: "https://oxfordeditors.com",
-    github_link: "https://github.com/appsaeed",
+    name: "NPM Packages",
+    title: "NPM Packages",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Npm-logo.svg/1920px-Npm-logo.svg.png",
+    link: "https://www.npmjs.com/package/utilies#other-packages",
+    github_link:
+      "https://github.com/appsaeed/utilies?tab=readme-ov-file#other-packages",
+    description: `
+    Published npm packages: (Javascript utility package) for JS utilities functions and methods to integrate and enhance developer experiences in the development of an application faster.
+    Open-Source Contributor: exploring and contributing to open source javascript, react, PHP, and laravel projects.
+    Vite.js Plugins: Developed (vite-svg, vite-sitemap) for SVG integration & sitemap generation. (Focuses on Vite and key functionalities)
+    `,
   },
 ];

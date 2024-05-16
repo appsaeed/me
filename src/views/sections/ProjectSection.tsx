@@ -1,6 +1,7 @@
 import { Link } from "@solidjs/router";
+import { BsGithub } from "solid-icons/bs";
 import { VsLiveShare } from "solid-icons/vs";
-import { For, JSX, JSXElement } from "solid-js";
+import { For, JSX } from "solid-js";
 import Animate from "../../animation";
 import Image from "../../components/Image";
 import SectionDescription from "../../components/SectionDescription";
@@ -22,17 +23,7 @@ export default function ProjectSection(props: JSX.HTMLAttributes<HTMLElement>) {
       <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         <For each={projects}>
           {(project, index) => {
-            return (
-              <ProjectCard
-                index={index()}
-                name={project.name}
-                title={project.title}
-                image={project.image}
-                description={project.description}
-                tags={project.tags}
-                link={project.link}
-              />
-            );
+            return <ProjectCard index={index()} {...project} />;
           }}
         </For>
       </div>
@@ -40,15 +31,7 @@ export default function ProjectSection(props: JSX.HTMLAttributes<HTMLElement>) {
   );
 }
 
-interface ProjectCardProps {
-  index: number;
-  title: string;
-  image: string;
-  description: JSXElement;
-  tags: Array<any>;
-  link: string;
-  name?: string;
-}
+type PProps = { index: number } & (typeof projects)[number];
 export function ProjectCard({
   title,
   image,
@@ -56,7 +39,8 @@ export function ProjectCard({
   tags,
   link,
   index,
-}: ProjectCardProps) {
+  github_link,
+}: PProps) {
   return (
     <Animate.div
       motion="slideInUp"
@@ -65,9 +49,14 @@ export function ProjectCard({
     >
       <div class="relative w-full h-60">
         <Image src={image} alt={title} class=" w-full h-full rounded-2xl" />
-        <div class="absolute inset-0 flex  m-3 gap-2 justify-end">
+        <div class="absolute inset-0 flex  m-3 gap-2 justify-between">
+          <div class="w-8 h-8 p-1  rounded-full bg-gray-500 text-center items-start text-2xl hover:bg-gray-600">
+            <Link target="_blank" href={github_link || ""}>
+              <BsGithub />
+            </Link>
+          </div>
           <div class="w-8 h-8 p-1  rounded-full bg-gray-500 text-center items-center align-middle text-2xl hover:bg-gray-600">
-            <Link href={link} target="_blank">
+            <Link href={link || ""} target="_blank">
               <VsLiveShare
                 role="img"
                 aria-label={title}
@@ -81,7 +70,10 @@ export function ProjectCard({
       </div>
       <div class="mt-5 cursor-pointer">
         <h3 class="text-white font-bold text-2xl">{title}</h3>
-        <p class="my-2 text-sm font-light text-slate-300">{description}</p>
+        <p
+          class="my-2 text-base text-slate-300"
+          ref={(elm) => (elm.innerHTML = description)}
+        ></p>
       </div>
       <div class="mt-4">
         <For each={tags}>

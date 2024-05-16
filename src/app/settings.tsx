@@ -1,4 +1,5 @@
 import { getThemeStore, homeURL, unSlash } from "utilies";
+import { pathJoin } from "./utilies";
 
 export default {
   name: "Appsaeed",
@@ -7,7 +8,7 @@ export default {
   basename: unSlash(import.meta.env.VITE_BASENAME),
   url: homeURL(import.meta.env.VITE_BASENAME || "", "/"),
   homeURL: function (path?: string | number) {
-    return homeURL([this.basename || "", String(path)], "/");
+    return pathJoin(this.url, path);
   },
   theme: {
     mode: getThemeStore(),

@@ -120,6 +120,7 @@ export default function (props: HtmlAttr) {
 
   return (
     <section
+      {...props}
       class={`bg-blurr bg-cover bg-left-top px-10 bg-fixed overflow-hidden max-w-fit`}
     >
       {/* start background images  */}

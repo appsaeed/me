@@ -120,19 +120,17 @@ export default function (props: HtmlAttr) {
 
   return (
     <section
-      {...props}
-      class={cn(
-        props.class,
-        `px-10 bg-fixed overflow-hidden max-w-fit`,
-        "pattern-page"
-      )}
+      class={cn(`pattern-page px-10 bg-fixed overflow-hidden max-w-fit`)}
     >
       <div class="w-full mx-auto text-center pt-28 pb-16">
-        <Animate.h1 class="mb-20 text-3xl font-extrabold">
+        <Animate.h1 class="mb-20 text-3xl font-extrabold   text-slate-300">
           I'm <span class=" font-bold text-6xl">Saeed</span> Hossen
         </Animate.h1>
 
-        <Animate.h2 motion="slideInUp" class="mb-20 text-3xl">
+        <Animate.h2
+          motion="slideInUp"
+          class="mb-20 text-3xl text-slate-300 dark:text-slate-300"
+        >
           Full-stack developer with expertise in JavaScript, Laravel, ReactJS,
           AI, and TailwindCSS. Building modern web applications with a focus on
           APIs. <b>Open to new opportunities!</b>
@@ -150,7 +148,7 @@ export default function (props: HtmlAttr) {
 
         <div
           ref={slides}
-          class="relative w-full mb-20 text-4xl font-extrabold h-10"
+          class="relative w-full mb-20 text-4xl font-extrabold  text-white h-10"
         >
           <p class="absolute top-full left-0 right-0">
             Full-Stack web development

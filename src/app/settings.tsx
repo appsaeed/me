@@ -1,5 +1,4 @@
-import { getThemeStore, unSlash } from "utilies";
-
+import { getThemeStore, homeURL, unSlash } from "utilies";
 
 const basename = unSlash(import.meta.env.VITE_BASENAME) || "";
 export default {
@@ -9,6 +8,9 @@ export default {
   basename,
   baseURL: import.meta.env.BASE_URL,
   url: unSlash(`${location.protocol}//${location.host}/${basename}`),
+  homeURL: function (path?: string | number) {
+    return homeURL(unSlash(this.basename));
+  },
   theme: {
     mode: getThemeStore(),
     color: getThemeStore() === "dark" ? "#e2e8f0" : "#0f172a",

@@ -2,6 +2,54 @@
 @tailwind components;
 @tailwind utilities;
 
+/** =================================================================
+    css custom scrollbar styles
+**/
+/* Default scrollbar styles */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-track-color);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb-color);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover-color);
+}
+
+/* Media query for dark mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --scrollbar-track-color: #333;
+    /* Dark mode track color */
+    --scrollbar-thumb-color: #555;
+    /* Dark mode thumb color */
+    --scrollbar-thumb-hover-color: #777;
+    /* Dark mode thumb color on hover */
+  }
+}
+
+/* Media query for light mode (optional, as this will be the default) */
+@media (prefers-color-scheme: light) {
+  :root {
+    --scrollbar-track-color: #f1f1f1;
+    /* Light mode track color */
+    --scrollbar-thumb-color: #888;
+    /* Light mode thumb color */
+    --scrollbar-thumb-hover-color: #555;
+    /* Light mode thumb color on hover */
+  }
+}
+
+
 .prattern-coat {
   background:
     radial-gradient(black 15%, transparent 16%) 0 0,
@@ -129,26 +177,7 @@ section {
   }
 }
 
-::-webkit-scrollbar {
-  width: 6px;
-}
 
-::-webkit-scrollbar-track {
-  background-color: gray;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: rgba(0, 0, 0, 0.398);
-  border-radius: 100px;
-}
-
-/* ::-webkit-scrollbar-track:hover {
-  background-color: black;
-} */
-
-::-webkit-scrollbar-thumb:hover {
-  background-color: red;
-}
 
 /*
  * start custome css 
@@ -164,9 +193,6 @@ section {
   --card-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
 }
 
-* {
-  scroll-behavior: smooth;
-}
 
 .text-gradient {
   background: radial-gradient(64.18% 64.18% at 71.16% 35.69%,

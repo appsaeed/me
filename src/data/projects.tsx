@@ -43,8 +43,8 @@ export default [
     image: asc,
     description: `Revolutionize Content Creation with the Web-Based AI Tool - Powered by WordPress, ReactJS, and TypeScript seamlessly integrated into the WordPress backend and brought to life with the dynamic UI design on the frontend. This powerhouse tool empowers users to effortlessly generate email content, craft engaging blogs, and create captivating articles, among many other possibilities`,
     tags: ["Wordpress", "API", "React.JS", "Typescript"],
-    link: "https://appsaeed.github.io/asc",
-    github_link: "https://github.com/appsaeed/asc",
+    link: "https://appsaeed.github.io/ai-content-creation",
+    github_link: "https://github.com/appsaeed/ai-content-creation",
   },
   {
     name: "NodeJS courses streaming",

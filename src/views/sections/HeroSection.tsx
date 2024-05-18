@@ -75,8 +75,8 @@ export default function (props: HtmlAttr) {
           class="mb-20 text-3xl text-slate-300 dark:text-slate-300"
         >
           Full-stack developer with expertise in JavaScript, Laravel, ReactJS,
-          AI, and TailwindCSS. Building modern web applications with a focus on
-          APIs. <b>Open to new opportunities!</b>
+          AI, and TailwindCSS. Building modern web applications & also focusing on
+          API. <b>Open to new opportunities!</b>
         </Animate.h2>
 
         <Animate.a

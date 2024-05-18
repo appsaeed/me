@@ -5,7 +5,7 @@ import { VsRemoteExplorer } from "solid-icons/vs";
 export default [
   { name: "Home", path: "/", icon: FiHome },
   { name: "Skils", path: null, icon: SiSkillshare },
-  { name: "Project", path: null, icon: FiPackage },
+  { name: "Projects", path: null, icon: FiPackage },
   { name: "Contact", path: null, icon: FiHeadphones },
   { name: "Explore", path: null, icon: VsRemoteExplorer },
   // { name: "ai", path: null },

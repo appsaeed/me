@@ -14,10 +14,12 @@ export default defineConfig({
     sitemap({
       baseURL: process.env.VITE_LIVE_URL,
       urls: [
-        "license",
-        "privacy-policy",
-        'term-and-conditions',
-        'help-center'
+        'ai-content-creation',
+        'task',
+        'prevous-portfolio',
+        'timezones',
+        'auxonic',
+        "tailwindcss-admin-template"
       ],
     }),
     pwa({ manifest: manifest })

@@ -1,12 +1,12 @@
 ![GitHub Banner](https://raw.githubusercontent.com/appsaeed/assets/main/me/banner.jpg)
 
-<h3>Hi <img src="https://raw.githubusercontent.com/appsaeed/assets/main/emoji/hello.gif" width="30" alt="hi" />, Nice to see you.</h3>
+## Hi <img src="https://raw.githubusercontent.com/appsaeed/assets/main/emoji/hello.gif" width="30" alt="hi" />, Nice to see you.
 
 I'm Saeed, a Full Stack Web Application Developer with good expertise in JavaScript, React.js, Laravel, Headless Technology, and everything related to APIs. I also specialize in TailwindCSS, and WordPress, including themes, plugins, and Rest APIs. Currently, **I'm open to work and employment opportunities**.
 
 Experience working in freelance marketplaces (Fiverr Level 2) specializing in Laravel, WordPress themes/plugins, and APIs. I actively build business development projects, user products, and consumer needs.
 
-**Full portfolio:** [https://appsaeed.github.io](https://appsaeed.github.io)
+## Full portfolio: [https://appsaeed.github.io](https://appsaeed.github.io)
 
 - ✅ Skilled full-stack developer proficient in Laravel, Node.js, and the modern JavaScript ecosystem (ReactJS, TailwindCSS).
 - 🧑‍🤝‍🧑 Currently contributing to open-source projects & creating packages/plugins e.g [utilies](https://github.com/appsaeed/utilies) | [vite-svg](https://github.com/appsaeed/vite-svg) | [vite-sitemap](https://github.com/appsaeed/vite-sitemap).
@@ -156,8 +156,6 @@ Experience working in freelance marketplaces (Fiverr Level 2) specializing in La
 
 [![appsaeed7@gmail.com](https://img.shields.io/badge/Email-appsaeed7@gmail.com-ff2e00?style=for-the-badge&logo=gmail&logoColor=white)](mailto:appsaeed7@gmail.com)
 [![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/appsaeed/)
-[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/saeedhossens)
-[![Facebook](https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://facebook.com/appsaeed8)
 [![Website](https://img.shields.io/badge/Website-1A56DB?style=for-the-badge&logo=apache&logoColor=white)](https://appsaeed.github.io)
 
 ## Statistics

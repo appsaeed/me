@@ -18,7 +18,7 @@ export default function Views() {
       <Navbar />
       <HeroSection class={container} id="home" />
       <SkilSection class={container} id="skils" />
-      <ProjectSection class={container} id="project" />
+      <ProjectSection class={container} id="projects" />
       <BusinessSection class={container} id="business" />
       <ContactSection class={container} id="contact" />
       <TestimonialSection class={container} />

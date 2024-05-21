@@ -8,7 +8,7 @@ Experience working in freelance marketplaces (Fiverr Level 2) specializing in La
 
 You can find out more about me on my website: [https://appsaeed.github.io](https://appsaeed.github.io)
 
-- ✅ Skilled full-stack developer proficient in Laravel, Node.js, WordPress, and the modern JavaScript ecosystem (ReactJS, TailwindCSS).
+- ✅ Skilled full-stack developer proficient in Laravel, Node.js, and the modern JavaScript ecosystem (ReactJS, TailwindCSS).
 - 🧑‍🤝‍🧑 Currently contributing to open-source projects & creating packages/plugins e.g [utilies](https://github.com/appsaeed/utilies) | [vite-svg](https://github.com/appsaeed/vite-svg) | [vite-sitemap](https://github.com/appsaeed/vite-sitemap).
 - 🔭 Continuous improvement in programming, soft skills, and new tools fuels innovation and high performance.
 - 🌱 Always learning and believe that every day is a learning opportunity.

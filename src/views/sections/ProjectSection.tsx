@@ -8,10 +8,10 @@ import SectionDescription from "../../components/SectionDescription";
 import SectionHeader from "../../components/SectionHeader";
 import sections from "../../data/classNames/sections";
 import projects from "../../data/projects";
-
+import { cn } from '../../app/utilies';
 export default function ProjectSection(props: JSX.HTMLAttributes<HTMLElement>) {
   return (
-    <section class={`${sections.common} ${props.class}`} {...props}>
+    <section class={cn(sections.common, props.class)} {...props}>
       <SectionHeader>Projects</SectionHeader>
       <SectionDescription>
         The following projects showcase my skills and experience through

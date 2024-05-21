@@ -6,7 +6,7 @@ I'm Saeed, a Full Stack Web Application Developer with good expertise in JavaScr
 
 Experience working in freelance marketplaces (Fiverr Level 2) specializing in Laravel, WordPress themes/plugins, and APIs. I actively build business development projects, user products, and consumer needs.
 
-You can find out more about me on my website: [https://appsaeed.github.io](https://appsaeed.github.io)
+**Full portfolio:** [https://appsaeed.github.io](https://appsaeed.github.io)
 
 - ✅ Skilled full-stack developer proficient in Laravel, Node.js, and the modern JavaScript ecosystem (ReactJS, TailwindCSS).
 - 🧑‍🤝‍🧑 Currently contributing to open-source projects & creating packages/plugins e.g [utilies](https://github.com/appsaeed/utilies) | [vite-svg](https://github.com/appsaeed/vite-svg) | [vite-sitemap](https://github.com/appsaeed/vite-sitemap).

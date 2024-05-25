@@ -96,7 +96,7 @@ export function Knowlage({ name, image: icon, percent, index }: KnowlagePrps) {
       </div>
       <div class="flex-auto w-full">
         <div class="flex justify-between mb-1">
-          <span class="text-base font-medium text-blue-700 dark:text-white">{name}</span>
+          <span class="text-base font-medium text-blue-700s dark:text-whites">{name}</span>
           <span class="counter text-sm font-medium text-blue-700 dark:text-white">
             {count()}%
           </span>

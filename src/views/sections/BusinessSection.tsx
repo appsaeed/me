@@ -1,41 +1,15 @@
 import { For } from "solid-js";
 import Animate from "../../animation";
-import img_send from '../../assets/images/send.svg';
-import img_shield from '../../assets/images/shield.svg';
-import img_start from '../../assets/images/star.svg';
+
 import Image from "../../components/Image";
 import SectionHeader from "../../components/SectionHeader";
 import ButtonGradient from "../../components/buttons/ButtonGradient";
+import business from "../../data/business";
 import { HtmlAttr } from "../../types/dom";
 
-const businessItem = [
-  {
-    icon: img_start,
-    title: "Rewards (create)",
-    content:
-      "I alway follow a customer requirements to create a project as demand but if need we additional we make conversation",
-  },
-  {
-    icon: img_shield,
-    title: "Project 100% Secured",
-    content:
-      "I take proactive steps make sure your information and crentials are secure. I also make with demo crentials before going to publish",
-  },
-  {
-    icon: img_send,
-    title: "Complete and deploay",
-    content:
-      "A complete project we pass throw testing then we make it ready for deplay to custoemr server",
-  },
-];
+type Business = { index: number } & (typeof business)[number];
 
-type CardProps = {
-  index: number;
-  icon: string;
-  title: string;
-  content: string;
-};
-function BusinessCard({ icon, title, content, index }: CardProps) {
+function BusinessCard({ icon, title, content, index }: Business) {
   return (
     <Animate.div
       motion="slideInRight"
@@ -104,7 +78,7 @@ export default function BusinessSection(props: HtmlAttr) {
 
         {/* item  */}
         <div class="flex-1 flex justify-center items-center md:mt-0 mt-10 relative flex-col">
-          <For each={businessItem}>
+          <For each={business}>
             {(item, index) => {
               return <BusinessCard index={index()} {...item} />;
             }}

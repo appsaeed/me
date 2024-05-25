@@ -63,7 +63,7 @@ export default function TestimonialSection(props: HtmlAttr) {
     setReviews(reviews().filter((_v, i) => i < 6));
   });
   return (
-    <section {...props} class={`${props.class} `}>
+    <section {...props}>
       <SectionHeader>Testimonials</SectionHeader>
       <div class="">
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">

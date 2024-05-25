@@ -59,11 +59,11 @@ export default function (props: HtmlAttr) {
 
   return (
     <section
-      {...props}
       class={cn(
         `pattern-page px-10 bg-fixed overflow-hidden max-w-fit`,
         props.class
       )}
+      {...props}
     >
       <div class="w-full mx-auto text-center pt-28 pb-16">
         <Animate.h1 class="mb-20 text-3xl font-extrabold   text-slate-300">

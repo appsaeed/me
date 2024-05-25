@@ -3,15 +3,13 @@ import { BsGithub } from "solid-icons/bs";
 import { VsLiveShare } from "solid-icons/vs";
 import { For, JSX } from "solid-js";
 import Animate from "../../animation";
-import { cn } from "../../app/utilies";
 import Image from "../../components/Image";
 import SectionDescription from "../../components/SectionDescription";
 import SectionHeader from "../../components/SectionHeader";
-import sections from "../../data/classNames/sections";
 import projects from "../../data/projects";
 export default function ProjectSection(props: JSX.HTMLAttributes<HTMLElement>) {
   return (
-    <section class={cn(sections.common, props.class)} {...props}>
+    <section {...props}>
       <SectionHeader>Projects</SectionHeader>
       <SectionDescription>
         The following projects showcase my skills and experience through

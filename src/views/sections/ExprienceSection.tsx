@@ -1,9 +1,10 @@
 import { JSX } from "solid-js";
-import sections from "../../data/classNames/sections";
 
-export default function ExprienceSection(props: JSX.HTMLAttributes<HTMLElement>) {
+export default function ExprienceSection(
+  props: JSX.HTMLAttributes<HTMLElement>
+) {
   return (
-    <section class={`${sections.common} ${props.class}`} {...props}>
+    <section {...props}>
       <span class="hash-span" id="work">
         &nbsp;
       </span>
@@ -39,29 +40,38 @@ export default function ExprienceSection(props: JSX.HTMLAttributes<HTMLElement>)
                 style="border-right: 7px solid rgb(35, 38, 49);"
               ></div>
               <div>
-                <h3 class="text-white text-[24px] font-bold">React.js Developer</h3>
-                <p class="text-secondary text-[16px] font-semibold" style="margin: 0px;">
+                <h3 class="text-white text-[24px] font-bold">
+                  React.js Developer
+                </h3>
+                <p
+                  class="text-secondary text-[16px] font-semibold"
+                  style="margin: 0px;"
+                >
                   Starbucks
                 </p>
               </div>
               <ul class="mt-5 list-disc ml-5 space-y-2">
                 <li class="text-white-100 text-[14px] pl-1 tracking-wider">
-                  Developing and maintaining web applications using React.js and other
-                  related technologies.
+                  Developing and maintaining web applications using React.js and
+                  other related technologies.
                 </li>
                 <li class="text-white-100 text-[14px] pl-1 tracking-wider">
-                  Collaborating with cross-functional teams including designers, product
-                  managers, and other developers to create high-quality products.
+                  Collaborating with cross-functional teams including designers,
+                  product managers, and other developers to create high-quality
+                  products.
                 </li>
                 <li class="text-white-100 text-[14px] pl-1 tracking-wider">
-                  Implementing responsive design and ensuring cross-browser compatibility.
+                  Implementing responsive design and ensuring cross-browser
+                  compatibility.
                 </li>
                 <li class="text-white-100 text-[14px] pl-1 tracking-wider">
-                  Participating in code reviews and providing constructive feedback to
-                  other developers.
+                  Participating in code reviews and providing constructive
+                  feedback to other developers.
                 </li>
               </ul>
-              <span class="vertical-timeline-element-date">March 2020 - April 2021</span>
+              <span class="vertical-timeline-element-date">
+                March 2020 - April 2021
+              </span>
             </div>
           </div>
           <div id="" class="vertical-timeline-element">
@@ -86,29 +96,38 @@ export default function ExprienceSection(props: JSX.HTMLAttributes<HTMLElement>)
                 style="border-right: 7px solid rgb(35, 38, 49);"
               ></div>
               <div>
-                <h3 class="text-white text-[24px] font-bold">React Native Developer</h3>
-                <p class="text-secondary text-[16px] font-semibold" style="margin: 0px;">
+                <h3 class="text-white text-[24px] font-bold">
+                  React Native Developer
+                </h3>
+                <p
+                  class="text-secondary text-[16px] font-semibold"
+                  style="margin: 0px;"
+                >
                   Tesla
                 </p>
               </div>
               <ul class="mt-5 list-disc ml-5 space-y-2">
                 <li class="text-white-100 text-[14px] pl-1 tracking-wider">
-                  Developing and maintaining web applications using React.js and other
-                  related technologies.
+                  Developing and maintaining web applications using React.js and
+                  other related technologies.
                 </li>
                 <li class="text-white-100 text-[14px] pl-1 tracking-wider">
-                  Collaborating with cross-functional teams including designers, product
-                  managers, and other developers to create high-quality products.
+                  Collaborating with cross-functional teams including designers,
+                  product managers, and other developers to create high-quality
+                  products.
                 </li>
                 <li class="text-white-100 text-[14px] pl-1 tracking-wider">
-                  Implementing responsive design and ensuring cross-browser compatibility.
+                  Implementing responsive design and ensuring cross-browser
+                  compatibility.
                 </li>
                 <li class="text-white-100 text-[14px] pl-1 tracking-wider">
-                  Participating in code reviews and providing constructive feedback to
-                  other developers.
+                  Participating in code reviews and providing constructive
+                  feedback to other developers.
                 </li>
               </ul>
-              <span class="vertical-timeline-element-date">Jan 2021 - Feb 2022</span>
+              <span class="vertical-timeline-element-date">
+                Jan 2021 - Feb 2022
+              </span>
             </div>
           </div>
           <div id="" class="vertical-timeline-element">
@@ -134,28 +153,35 @@ export default function ExprienceSection(props: JSX.HTMLAttributes<HTMLElement>)
               ></div>
               <div>
                 <h3 class="text-white text-[24px] font-bold">Web Developer</h3>
-                <p class="text-secondary text-[16px] font-semibold" style="margin: 0px;">
+                <p
+                  class="text-secondary text-[16px] font-semibold"
+                  style="margin: 0px;"
+                >
                   Shopify
                 </p>
               </div>
               <ul class="mt-5 list-disc ml-5 space-y-2">
                 <li class="text-white-100 text-[14px] pl-1 tracking-wider">
-                  Developing and maintaining web applications using React.js and other
-                  related technologies.
+                  Developing and maintaining web applications using React.js and
+                  other related technologies.
                 </li>
                 <li class="text-white-100 text-[14px] pl-1 tracking-wider">
-                  Collaborating with cross-functional teams including designers, product
-                  managers, and other developers to create high-quality products.
+                  Collaborating with cross-functional teams including designers,
+                  product managers, and other developers to create high-quality
+                  products.
                 </li>
                 <li class="text-white-100 text-[14px] pl-1 tracking-wider">
-                  Implementing responsive design and ensuring cross-browser compatibility.
+                  Implementing responsive design and ensuring cross-browser
+                  compatibility.
                 </li>
                 <li class="text-white-100 text-[14px] pl-1 tracking-wider">
-                  Participating in code reviews and providing constructive feedback to
-                  other developers.
+                  Participating in code reviews and providing constructive
+                  feedback to other developers.
                 </li>
               </ul>
-              <span class="vertical-timeline-element-date">Jan 2022 - Jan 2023</span>
+              <span class="vertical-timeline-element-date">
+                Jan 2022 - Jan 2023
+              </span>
             </div>
           </div>
           <div id="" class="vertical-timeline-element">
@@ -180,29 +206,38 @@ export default function ExprienceSection(props: JSX.HTMLAttributes<HTMLElement>)
                 style="border-right: 7px solid rgb(35, 38, 49);"
               ></div>
               <div>
-                <h3 class="text-white text-[24px] font-bold">Full stack Developer</h3>
-                <p class="text-secondary text-[16px] font-semibold" style="margin: 0px;">
+                <h3 class="text-white text-[24px] font-bold">
+                  Full stack Developer
+                </h3>
+                <p
+                  class="text-secondary text-[16px] font-semibold"
+                  style="margin: 0px;"
+                >
                   Meta
                 </p>
               </div>
               <ul class="mt-5 list-disc ml-5 space-y-2">
                 <li class="text-white-100 text-[14px] pl-1 tracking-wider">
-                  Developing and maintaining web applications using React.js and other
-                  related technologies.
+                  Developing and maintaining web applications using React.js and
+                  other related technologies.
                 </li>
                 <li class="text-white-100 text-[14px] pl-1 tracking-wider">
-                  Collaborating with cross-functional teams including designers, product
-                  managers, and other developers to create high-quality products.
+                  Collaborating with cross-functional teams including designers,
+                  product managers, and other developers to create high-quality
+                  products.
                 </li>
                 <li class="text-white-100 text-[14px] pl-1 tracking-wider">
-                  Implementing responsive design and ensuring cross-browser compatibility.
+                  Implementing responsive design and ensuring cross-browser
+                  compatibility.
                 </li>
                 <li class="text-white-100 text-[14px] pl-1 tracking-wider">
-                  Participating in code reviews and providing constructive feedback to
-                  other developers.
+                  Participating in code reviews and providing constructive
+                  feedback to other developers.
                 </li>
               </ul>
-              <span class="vertical-timeline-element-date">Jan 2023 - Present</span>
+              <span class="vertical-timeline-element-date">
+                Jan 2023 - Present
+              </span>
             </div>
           </div>
         </div>

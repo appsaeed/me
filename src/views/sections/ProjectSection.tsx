@@ -3,12 +3,12 @@ import { BsGithub } from "solid-icons/bs";
 import { VsLiveShare } from "solid-icons/vs";
 import { For, JSX } from "solid-js";
 import Animate from "../../animation";
+import { cn } from "../../app/utilies";
 import Image from "../../components/Image";
 import SectionDescription from "../../components/SectionDescription";
 import SectionHeader from "../../components/SectionHeader";
 import sections from "../../data/classNames/sections";
 import projects from "../../data/projects";
-import { cn } from '../../app/utilies';
 export default function ProjectSection(props: JSX.HTMLAttributes<HTMLElement>) {
   return (
     <section class={cn(sections.common, props.class)} {...props}>
@@ -45,7 +45,7 @@ export function ProjectCard({
     <Animate.div
       motion="slideInUp"
       duration={`1.${index}s`}
-      class=" bg-slate-900 p-4 rounded-2xl w-full transition scale-100 hover:scale-105"
+      class=" bg-slate-900 p-4 rounded-2xl w-full transition scale-100 hover:scale-105 grid grid-rows-[auto_auto_1fr]"
     >
       <div class="relative w-full h-60">
         <Image src={image} alt={title} class=" w-full h-full rounded-2xl" />
@@ -75,7 +75,7 @@ export function ProjectCard({
           ref={(elm) => (elm.innerHTML = description)}
         ></p>
       </div>
-      <div class="mt-4">
+      <div class="self-end py-4">
         <For each={tags}>
           {(tag) => <a class="link lowercase m-1">#{tag}</a>}
         </For>

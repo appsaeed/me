@@ -14,6 +14,8 @@ export default defineConfig({
     sitemap({
       baseURL: process.env.VITE_LIVE_URL,
       urls: [
+        "contact",
+        "help-center",
         'ai-content-creation',
         'task',
         'prevous-portfolio',

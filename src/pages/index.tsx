@@ -20,10 +20,10 @@ export default function Views() {
       <SkilSection class={container} id="skils" />
       <ProjectSection class={container} id="projects" />
       <BusinessSection class={container} id="business" />
+      <AISections class={container} id="ai" />
+      <ExploreSection class={container} id="explore" />
       <ContactSection class={container} id="contact" />
       <TestimonialSection class={container} id="testimonial" />
-      <ExploreSection class={container} id="explore" />
-      <AISections class={container} id="ai" />
       <CompaniesSection class={container} id="companies" />
       <Footer />
     </>

@@ -6,7 +6,7 @@ import { createStore } from "solid-js/store";
 import { isMail } from "utilies";
 import Animate from "../../animation";
 import Toast from "../../app/Toast";
-import img_support from '../../assets/images/support-animate.svg';
+import img_support from "../../assets/images/support-animate.svg";
 import Image from "../../components/Image";
 import InputwithLabel from "../../components/InputwithLabel";
 import SectionHeader from "../../components/SectionHeader";
@@ -65,9 +65,10 @@ export default function ContactSection(props: HtmlAttr) {
         function (error) {
           Toast.fire("error", error.text, "error");
         }
-      );
-
-    setLoading(false);
+      )
+      .finally(() => {
+        setLoading(false);
+      });
   };
   return (
     <section {...props}>
@@ -91,7 +92,14 @@ export default function ContactSection(props: HtmlAttr) {
               class="flex gap-2 my-2"
             >
               {/* <FiMail class="mt-1 text-[#ff2e00]" /> <span>appsaeed7@gmail.com</span> */}
-              <Image height={'20px'} width={'20px'} src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico" alt="" srcset="" /> <span>appsaeed7@gmail.com</span>
+              <Image
+                height={"20px"}
+                width={"20px"}
+                src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico"
+                alt=""
+                srcset=""
+              />{" "}
+              <span>appsaeed7@gmail.com</span>
             </a>
             <a
               href="tel:+8801780861887"
@@ -105,7 +113,8 @@ export default function ContactSection(props: HtmlAttr) {
               target="_blank"
               class="flex gap-2 my-2"
             >
-              <BsWhatsapp class="mt-1 text-[#25d366]" /> <span>+8801780861887</span>
+              <BsWhatsapp class="mt-1 text-[#25d366]" />{" "}
+              <span>+8801780861887</span>
             </a>
           </div>
           <form

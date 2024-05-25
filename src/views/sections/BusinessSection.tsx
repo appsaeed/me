@@ -1,6 +1,7 @@
 import { For } from "solid-js";
 import Animate from "../../animation";
 
+import { Link } from "@solidjs/router";
 import Image from "../../components/Image";
 import SectionHeader from "../../components/SectionHeader";
 import ButtonGradient from "../../components/buttons/ButtonGradient";
@@ -72,7 +73,9 @@ export default function BusinessSection(props: HtmlAttr) {
             advantages:
           </Animate.p>
           <Animate.button motion="slideInDown" class="flex gap-5">
-            <ButtonGradient>Get Starting</ButtonGradient>
+            <ButtonGradient class="text-white">
+              <Link href="/contact">Get Starting</Link>
+            </ButtonGradient>
           </Animate.button>
         </div>
 

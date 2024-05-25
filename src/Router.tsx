@@ -21,10 +21,11 @@ export default function Router() {
   return (
     <Routes>
       <Route path="/" element={<Homepage />} />
+      <Route path="/contact" element={<HelpCenter />} />
+      <Route path="/help-center" element={<HelpCenter />} />
       <Route path="/license" element={<License />} />
       <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       <Route path="/term-and-conditions" element={<Termandconditions />} />
-      <Route path="/help-center" element={<HelpCenter />} />
       <Route path="/fullscreen" element={<Fullscreen />} />
       <Route path="/*" element={<Nopage />} />
     </Routes>

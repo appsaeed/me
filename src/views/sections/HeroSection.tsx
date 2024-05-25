@@ -72,7 +72,7 @@ export default function (props: HtmlAttr) {
 
         <Animate.h2
           motion="slideInUp"
-          class="mb-20 text-3xl text-[unset] dark:text-[unset]"
+          class="mb-20 text-3xl text-white dark:text-white"
         >
           Full-stack developer with expertise in JavaScript, Laravel, ReactJS,
           AI, and TailwindCSS. Building modern web applications & also focusing

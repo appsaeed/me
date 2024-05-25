@@ -1,10 +1,10 @@
-![GitHub Banner](https://raw.githubusercontent.com/appsaeed/assets/main/me/banner.jpg)
+![Saeed web application banner](https://raw.githubusercontent.com/appsaeed/assets/main/me/banner.jpg)
 
 ## Hi <img src="https://raw.githubusercontent.com/appsaeed/assets/main/emoji/hello.gif" width="30" alt="hi" />, Nice to see you.
 
 I'm Saeed, a Full Stack Web Application Developer with good expertise in JavaScript, React.js, Laravel, Headless Technology, and everything related to APIs. I also specialize in TailwindCSS, and WordPress, including themes, plugins, and Rest APIs. Currently, **I'm open to work and employment opportunities**.
 
-Experience working in freelance marketplaces (Fiverr Level 2) specializing in Laravel, WordPress themes/plugins, and APIs. I actively build business development projects, user products, and consumer needs.
+Experience working in freelance marketplaces (Fiverr Level 2) specializing in vanila Javascript, raw PHP, Laravel, ReactJS, WordPress themes/plugins, and APIs. I actively build business development projects, user products, and consumer needs.
 
 ## Full portfolio: [https://appsaeed.github.io](https://appsaeed.github.io)
 
@@ -13,7 +13,7 @@ Experience working in freelance marketplaces (Fiverr Level 2) specializing in La
 - 🔭 Continuous improvement in programming, soft skills, and new tools fuels innovation and high performance.
 - 🌱 Always learning and believe that every day is a learning opportunity.
 - 👯 Open to work and employment opportunities (remote/on-location).
-- 💬 Ask me anything about JavaScript, Typescript, ReactJS, PHP, Laravel, WordPress, and APIs!
+- 💬 Ask me anything about JavaScript, Typescript, ReactJS, PHP, Laravel, NodeJS, and APIs!
 - 📫 For quick contact, please send an email to: [appsaeed7@gmail.com](mailto:appsaeed7@gmail.com).
 - 😄 Pronouns: He, Him & Happy 😄.
 - 🛬 Fun fact: I love to travel, read books, Watch movies, YouTube videos, and listen to music.

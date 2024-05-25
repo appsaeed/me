@@ -1,6 +1,3 @@
-import asc from "../assets/projects/asc.png";
-import ftools from "../assets/projects/ftools.png";
-
 export default [
   {
     name: "Laravel SaaS Application",
@@ -30,7 +27,7 @@ export default [
   {
     name: "Auxonic",
     title: "Auxonic beta tools",
-    image: ftools,
+    image: `https://raw.githubusercontent.com/appsaeed/assets/main/projects/auxonic/auxonic.png`,
     description: `This is a web-based developer toolkit built with React.js and TypeScript for lightning-fast performance. It offers essential tools like image-to-text conversion and IP lookup, all in one convenient platform. Firebase Authentication keeps things secure and lets you personalize your experience`,
     tags: ["Firebase", "Tailwindcss", "Reactjs", "Typescript"],
     link: "https://appsaeed.github.io/auxonic/",
@@ -40,7 +37,7 @@ export default [
   {
     name: "AI Content Creation",
     title: "AI Content Creation",
-    image: asc,
+    image: `https://raw.githubusercontent.com/appsaeed/assets/main/projects/ai-content-creation/AI-Content-Creation.png`,
     description: `Revolutionize Content Creation with the Web-Based AI Tool - Powered by WordPress, ReactJS, and TypeScript seamlessly integrated into the WordPress backend and brought to life with the dynamic UI design on the frontend. This powerhouse tool empowers users to effortlessly generate email content, craft engaging blogs, and create captivating articles, among many other possibilities`,
     tags: ["Wordpress", "API", "React.JS", "Typescript"],
     link: "https://appsaeed.github.io/ai-content-creation",

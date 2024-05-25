@@ -101,7 +101,7 @@ export function Knowlage({ name, image: icon, percent, index }: KnowlagePrps) {
             {count()}%
           </span>
         </div>
-        <div class="w-full bg-gray-700 rounded-full h-2 dark:bg-gray-700">
+        <div class="w-full bg-gray-400 rounded-full h-2 dark:bg-gray-700">
           <div
             class="bg-blue-600 h-2 rounded-full transition-all"
             style={{ width: `${count()}%` }}

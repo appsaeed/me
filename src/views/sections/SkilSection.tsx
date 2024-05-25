@@ -18,12 +18,7 @@ export default function SkilSection(props: HtmlAttr) {
         </div>
         <div class="">
           <For each={skils}>
-            {(skil, index) => (
-              <Knowlage
-                index={index()}
-                {...skil}
-              />
-            )}
+            {(skil, index) => <Knowlage index={index()} {...skil} />}
           </For>
         </div>
       </div>
@@ -96,12 +91,10 @@ export function Knowlage({ name, image: icon, percent, index }: KnowlagePrps) {
       </div>
       <div class="flex-auto w-full">
         <div class="flex justify-between mb-1">
-          <span class="text-base font-medium text-blue-700s dark:text-whites">{name}</span>
-          <span class="counter text-sm font-medium text-blue-700 dark:text-white">
-            {count()}%
-          </span>
+          <span class="text-base font-medium">{name}</span>
+          <span class="counter text-base font-medium">{count()}%</span>
         </div>
-        <div class="w-full bg-gray-400 rounded-full h-2 dark:bg-gray-700">
+        <div class="w-full bg-slate-300 rounded-full h-2 dark:bg-gray-700">
           <div
             class="bg-blue-600 h-2 rounded-full transition-all"
             style={{ width: `${count()}%` }}

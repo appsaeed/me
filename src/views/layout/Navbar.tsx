@@ -63,6 +63,12 @@ export default function Navbar() {
           <SwtichTheme />
 
           <div class="flex items-center md:order-2">
+            <a href="http://github.com/appsaeed" target="_blank">
+              <BsGithub class=" text-3xl" />
+            </a>
+          </div>
+
+          <div class="flex items-center md:order-2">
             <button
               data-collapse-toggle="navbar-user"
               type="button"
@@ -91,17 +97,11 @@ export default function Navbar() {
             </button>
           </div>
 
-          <div class="flex items-center md:order-2">
-            <a href="http://github.com/appsaeed" target="_blank">
-              <BsGithub class=" text-3xl" />
-            </a>
-          </div>
-
           <div
             class={`items-center justify-between w-full md:flex md:w-auto md:order-1 transition-all ${
               isMobileMenu()
-                ? "sm:opacity-100 sm:visible"
-                : "sm:opacity-0 sm:h-0 max-sm:invisible"
+                ? "max-md:opacity-100 max-md:visible"
+                : "max-md:opacity-0 max-md:h-0 max-sm:invisible"
             }`}
             id="navbar-user"
           >

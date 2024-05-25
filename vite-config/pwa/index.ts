@@ -6,6 +6,7 @@ import { ManifestOptions } from "./type";
 const MANIFEST_FILENAME = "manifest.webmanifest";
 const SWJS_FILENAME = "sw.js";
 type BundleData = Record<string, any>;
+
 interface Options {
   dir: string;
   html: string;
@@ -68,7 +69,7 @@ export async function addServiceWorkerToHtml(options: Options, config: PWAConfig
         <script>
             if ("serviceWorker" in navigator) {
                 window.addEventListener("load", () => {
-                navigator.serviceWorker.register("${serverWorkerPath}", { scope: "${process.env.BASE}" });
+                navigator.serviceWorker.register("${serverWorkerPath}", { scope: "${process.env.BASE || '/'}" });
                 });
             }
         </script>

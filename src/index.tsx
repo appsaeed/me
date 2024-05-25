@@ -27,7 +27,7 @@ export const Index = () => {
   );
 };
 //dom selector
-const selector = `${import.meta.env.VITE_MAIN_DOM || "%VITE_MAIN_DOM%"}`;
+const selector = import.meta.env.VITE_MAIN_DOM || "%VITE_MAIN_DOM%";
 const maindom = document.querySelector(selector) || document.body;
 
 render(() => <Index />, maindom);

@@ -75,13 +75,13 @@ export default function (props: HtmlAttr) {
           class="mb-20 text-3xl text-slate-300 dark:text-slate-300"
         >
           Full-stack developer with expertise in JavaScript, Laravel, ReactJS,
-          AI, and TailwindCSS. Building modern web applications & also focusing on
-          API. <b>Open to new opportunities!</b>
+          AI, and TailwindCSS. Building modern web applications & also focusing
+          on API. <b>Open to new opportunities!</b>
         </Animate.h2>
 
         <Animate.a
-          href="/saeed-cv.pdf"
-          download={"Saeed CV for web development job"}
+          href="https://raw.githubusercontent.com/appsaeed/assets/main/me/saeed-hossen-resume.pdf"
+          download={"saeed-hossen-resume"}
           motion="slideInUp"
           type="button"
           class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-10 py-2 text-center mr-2 mb-2"
@@ -102,7 +102,8 @@ export default function (props: HtmlAttr) {
           <p class="absolute top-full left-0 right-0">
             Artificial intelligence
           </p>
-          <p class="absolute top-full left-0 right-0">Datebase & Rest API</p>
+          <p class="absolute top-full left-0 right-0">Datebase & REST API</p>
+          <p class="absolute top-full left-0 right-0">NodeJS Application</p>
         </div>
       </div>
     </section>

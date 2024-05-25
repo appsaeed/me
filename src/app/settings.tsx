@@ -1,12 +1,11 @@
-import { getThemeStore, homeURL, unSlash } from "utilies";
-import { pathJoin } from "./utilies";
+import { getThemeStore, pathJoin, unSlash, url } from "utilies";
 
 export default {
   name: "Appsaeed",
   mode: import.meta.env.BASE_URL,
   dev: import.meta.env.DEV,
   basename: unSlash(import.meta.env.VITE_BASENAME),
-  url: homeURL(import.meta.env.VITE_BASENAME || "", "/"),
+  url: url(import.meta.env.VITE_BASENAME || "", "/"),
   homeURL: function (path?: string | number) {
     return pathJoin(this.url, path);
   },

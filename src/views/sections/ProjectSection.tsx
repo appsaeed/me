@@ -45,10 +45,10 @@ export function ProjectCard({
     <Animate.div
       motion="slideInUp"
       duration={`1.${index}s`}
-      class=" bg-slate-900 p-4 rounded-2xl w-full transition scale-100 hover:scale-105 grid grid-rows-[auto_auto_1fr]"
+      class=" bg-slate-900 p-4 rounded-2xl w-full transition scale-100 hover:scale-105 flex flex-col"
     >
-      <div class="relative w-full h-60">
-        <Image src={image} alt={title} class=" w-full h-full rounded-2xl" />
+      <div class="relative w-full h-48">
+        <Image src={image} alt={title} class="w-full h-full rounded-2xl" />
         <div class="absolute inset-0 flex  m-3 gap-2 justify-between">
           <div class="w-8 h-8 p-1  rounded-full bg-gray-500 text-center items-start text-2xl hover:bg-gray-600">
             <Link target="_blank" href={github_link || ""}>
@@ -75,9 +75,9 @@ export function ProjectCard({
           ref={(elm) => (elm.innerHTML = description)}
         ></p>
       </div>
-      <div class="self-end py-4">
+      <div class="mt-auto py-4 flex flex-wrap">
         <For each={tags}>
-          {(tag) => <a class="link lowercase m-1">#{tag}</a>}
+          {(tag) => <span class="link lowercase m-1">#{tag}</span>}
         </For>
       </div>
     </Animate.div>

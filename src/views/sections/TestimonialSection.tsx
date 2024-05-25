@@ -41,7 +41,8 @@ function ListItem({
           <FiShoppingBag class="text-xl" /> package
         </a>
         <div class="flex gap-1">
-          <FiMapPin class="text-xl" />{reviewer_country}
+          <FiMapPin class="text-xl" />
+          {reviewer_country}
         </div>
       </div>
       <div class="">
@@ -65,7 +66,7 @@ export default function TestimonialSection(props: HtmlAttr) {
     <section {...props} class={`${props.class} `}>
       <SectionHeader>Testimonials</SectionHeader>
       <div class="">
-        <div class="grid sm:grid-cols-3 gap-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           <For each={reviews()}>
             {(review, index) => {
               return <ListItem index={index()} {...review} />;

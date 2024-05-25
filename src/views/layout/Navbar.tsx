@@ -100,8 +100,8 @@ export default function Navbar() {
           <div
             class={`items-center justify-between w-full md:flex md:w-auto md:order-1 transition-all ${
               isMobileMenu()
-                ? "max-sm:opacity-100 max-sm:visible"
-                : "max-sm:opacity-0 max-sm:h-0 max-sm:invisible"
+                ? "sm:opacity-100 sm:visible"
+                : "sm:opacity-0 sm:h-0 max-sm:invisible"
             }`}
             id="navbar-user"
           >

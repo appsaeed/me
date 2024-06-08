@@ -8,6 +8,7 @@ import { deviceTheme, getThemeStore, setThemeStore } from "utilies";
 import Routes from "./Router";
 import settings from "./app/settings";
 import "./assets/css/image.css";
+import "./assets/css/patterns.css";
 import "./index.css";
 
 if (!getThemeStore()) setThemeStore(deviceTheme);

@@ -7,7 +7,7 @@ import { AnimationMotion } from "../../animation/type";
 import { cn } from "../../app/utilies";
 import { HtmlAttr } from "../../types/dom";
 
-export default function (props: HtmlAttr) {
+export default function ({ class: className, ...props }: HtmlAttr) {
   let slides: HTMLParagraphElement | undefined;
 
   onMount(() => {
@@ -59,9 +59,7 @@ export default function (props: HtmlAttr) {
 
   return (
     <section
-      class={cn(
-        `pattern-page px-10 bg-fixed overflow-hidden max-w-fit`,
-        props.class
+      class={cn(`px-10 overflow-hidden pattern-circle dark:pattern-circle  bg-fixed dark:bg-fixed  max-w-fit`,
       )}
       {...props}
     >

@@ -59,7 +59,7 @@ export default function ({ class: className, ...props }: HtmlAttr) {
 
   return (
     <section
-      class={cn(`px-10 overflow-hidden pattern-circle dark:pattern-circle  bg-fixed dark:bg-fixed  max-w-fit`,
+      class={cn(`px-10 overflow-hidden pattern-circle dark:pattern-circle  bg-fixed dark:bg-fixed  max-w-fit min-h-full`,
       )}
       {...props}
     >
@@ -70,7 +70,7 @@ export default function ({ class: className, ...props }: HtmlAttr) {
 
         <Animate.h2
           motion="slideInUp"
-          class="mb-20 text-3xl text-white dark:text-white"
+          class="mb-20 text-3xl max-md:text-xl text-white dark:text-white"
         >
           Full-stack developer with expertise in JavaScript, Nodejs, PHP, Laravel, ReactJS,
           AI, and TailwindCSS. Building modern web applications & also focusing

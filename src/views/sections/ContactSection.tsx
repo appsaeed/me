@@ -1,4 +1,3 @@
-import emailjs from "@emailjs/browser";
 import { BsWhatsapp } from "solid-icons/bs";
 import { FiPhone } from "solid-icons/fi";
 import { createSignal } from "solid-js";
@@ -6,6 +5,7 @@ import { createStore } from "solid-js/store";
 import { isMail } from "utilies";
 import Animate from "../../animation";
 import Toast from "../../app/Toast";
+import { cn } from "../../app/utilies";
 import img_support from "../../assets/images/support-animate.svg";
 import Image from "../../components/Image";
 import InputwithLabel from "../../components/InputwithLabel";
@@ -15,7 +15,6 @@ import { HtmlAttr } from "../../types/dom";
 import { FormEvent } from "../../types/event";
 
 interface FormFields {
-  name: string;
   email: string;
   subject: string;
   message: string;
@@ -24,7 +23,6 @@ interface FormFields {
 export default function ContactSection(props: HtmlAttr) {
   const [loading, setLoading] = createSignal(false);
   const [form, setForm] = createStore<FormFields>({
-    name: "",
     email: "",
     subject: "",
     message: "",
@@ -47,28 +45,37 @@ export default function ContactSection(props: HtmlAttr) {
       return false;
     }
 
-    emailjs
-      .send(
-        "service_dl76l0v",
-        "template_r7403cp",
-        {
-          name: form.name,
-          subject: form.subject,
-          message: form.message,
-        },
-        "auhoy6yOg54zHv__H"
-      )
-      .then(
-        function (response) {
-          Toast.fire("success", response.text + " email sent", "success");
-        },
-        function (error) {
-          Toast.fire("error", error.text, "error");
+    const myHeaders = new Headers();
+    myHeaders.append("Accept", "application/json");
+    myHeaders.append("Content-Type", "application/json");
+    myHeaders.append("Authorization", `Bearer ${import.meta.env.VITE_API_TOKEN}`);
+
+
+    const raw = JSON.stringify({
+      "to": form.email,
+      "message": form.message,
+      "subject": form.subject
+    });
+
+    const requestOptions = {
+      method: "POST",
+      headers: myHeaders,
+      body: raw
+    };
+
+    fetch("https://saastask.onrender.com/api/v3/send-email", requestOptions)
+      .then((response) => response.json())
+      .then((response) => {
+        if (response?.status === 'success') {
+          Toast.fire('Success', 'Successfull Email was sent', 'success')
+        } else {
+          Toast.fire('Server Error', response?.message, 'error')
         }
-      )
-      .finally(() => {
-        setLoading(false);
-      });
+      })
+      .catch((error) => Toast.fire('Sothing wrong!', error.message, 'error'))
+      .finally(() => setLoading(false));
+
+
   };
   return (
     <section {...props}>
@@ -123,23 +130,16 @@ export default function ContactSection(props: HtmlAttr) {
           >
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <InputwithLabel
-                name="name"
-                label="Your name"
-                placeholder="What's your name"
-                value={form.name}
-                oninput={(e) => setData("name", e.target.value)}
-              />
-              <InputwithLabel
                 name="email"
                 type="email"
-                label="Your email"
+                label="What's Your email addrss"
                 placeholder="What's your email"
                 value={form.email}
                 oninput={(e) => setData("email", e.target.value)}
               />
               <InputwithLabel
                 name="subject"
-                label="Your subject"
+                label="Tell us any fact 🤷"
                 placeholder="Tell us a resone"
                 value={form.subject}
                 oninput={(e) => setData("subject", e.target.value)}
@@ -147,8 +147,8 @@ export default function ContactSection(props: HtmlAttr) {
             </div>
 
             <TextareaWithLabel
-              label="Your messsage"
-              placeholder="What would you like to say us"
+              label="😃 Say Something Fun & Important! 🚀"
+              placeholder="Write here..."
               value={form.message}
               oninput={(e) => setData("message", e.target.value)}
             />
@@ -156,9 +156,17 @@ export default function ContactSection(props: HtmlAttr) {
             <button
               disabled={loading()}
               type="submit"
-              class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              class={cn("text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 flex items-center justify-center", {
+                "cursor-not-allowed": loading()
+              })}
             >
-              {loading() ? "loading..." : "Send message"}
+              {loading() ? <>
+                <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                  <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                  <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                </svg>
+                Loading...
+              </> : "Send message 🚀"}
             </button>
           </form>
         </Animate.div>

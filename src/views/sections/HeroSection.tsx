@@ -64,7 +64,7 @@ export default function ({ class: className, ...props }: HtmlAttr) {
       {...props}
     >
       <div class="w-full mx-auto text-center pt-28 pb-16">
-        <Animate.h1 class="mb-20 text-3xl font-extrabold   text-slate-300">
+        <Animate.h1 motion="slideInDown" duration={'1.5s'} class="mb-20 text-3xl font-extrabold   text-slate-300">
           I'm <span class=" font-bold text-6xl">Saeed</span> Hossen
         </Animate.h1>
 
@@ -72,9 +72,11 @@ export default function ({ class: className, ...props }: HtmlAttr) {
           motion="slideInUp"
           class="mb-20 text-3xl text-white dark:text-white"
         >
-          Full-stack developer with expertise in JavaScript, Laravel, ReactJS,
+          Full-stack developer with expertise in JavaScript, Nodejs, PHP, Laravel, ReactJS,
           AI, and TailwindCSS. Building modern web applications & also focusing
-          on API. <b>Open to new opportunities!</b>
+          on API.
+          <br />
+          <b>Open to new opportunities!</b>
         </Animate.h2>
 
         <Animate.a

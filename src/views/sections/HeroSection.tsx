@@ -59,7 +59,7 @@ export default function ({ class: className, ...props }: HtmlAttr) {
 
   return (
     <section
-      class={cn(`px-10 overflow-hidden pattern-circle dark:pattern-circle  bg-fixed dark:bg-fixed  max-w-fit min-h-full`,
+      class={cn(`px-10 overflow-hidden pattern-circle dark:pattern-circle  bg-fixed dark:bg-fixed  max-w-fit min-h-fit`,
       )}
       {...props}
     >

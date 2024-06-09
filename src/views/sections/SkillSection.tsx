@@ -3,13 +3,13 @@ import Animate from "../../animation";
 import developerActivitySvg from "../../assets/developer-activity.svg";
 import Image from "../../components/Image";
 import SectionHeader from "../../components/SectionHeader";
-import skils from "../../data/skils";
+import skills from "../../data/skills";
 import { HtmlAttr } from "../../types/dom";
 
-export default function SkilSection(props: HtmlAttr) {
+export default function SkillSection(props: HtmlAttr) {
   return (
     <section {...props}>
-      <SectionHeader>Web frameworks & programming Skils</SectionHeader>
+      <SectionHeader>Web frameworks & programming Skills</SectionHeader>
       <div class={`grid grid-cols-1 sm:grid-cols-2`}>
         <div class="w-full">
           <Animate.div motion="slideInLeft">
@@ -17,7 +17,7 @@ export default function SkilSection(props: HtmlAttr) {
           </Animate.div>
         </div>
         <div class="">
-          <For each={skils}>
+          <For each={skills}>
             {(skil, index) => <Knowlage index={index()} {...skil} />}
           </For>
         </div>

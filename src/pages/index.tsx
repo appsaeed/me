@@ -7,7 +7,7 @@ import ContactSection from "../views/sections/ContactSection";
 import ExploreSection from "../views/sections/ExploreSection";
 import HeroSection from "../views/sections/HeroSection";
 import ProjectSection from "../views/sections/ProjectSection";
-import SkilSection from "../views/sections/SkilSection";
+import SkillSection from "../views/sections/SkillSection";
 import TestimonialSection from "../views/sections/TestimonialSection";
 
 export default function Views() {
@@ -17,7 +17,7 @@ export default function Views() {
     <>
       <Navbar />
       <HeroSection class={container} id="home" />
-      <SkilSection class={container} id="skils" />
+      <SkillSection class={container} id="skills" />
       <ProjectSection class={container} id="projects" />
       <BusinessSection class={container} id="business" />
       <AISections class={container} id="ai" />

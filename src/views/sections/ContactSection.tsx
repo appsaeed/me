@@ -89,7 +89,7 @@ export default function ContactSection(props: HtmlAttr) {
       <SectionHeader>Contact Me </SectionHeader>
       <div class="grid grid-cols-1 sm:grid-cols-2">
         {/* secound part */}
-        <Animate.div motion="slideInLeft" class="mx-auto">
+        <Animate.div motion="slideInLeft" class="">
           <Image class="w-full h-full" src={img_support} />
         </Animate.div>
 

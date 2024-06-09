@@ -58,14 +58,14 @@ export function ExploreCard({
     <>
       <div
         ref={(elm) => createAnimate({ element: elm, duration: `1.${index}s` })}
-        class={`relative  overflow-hidden flex items-center justify-center md:h-[460px] transition-[all] duration-[0.7s] cursor-pointer max-sm:h-[100px] md:flex-[0.9]`}
+        class={`relative  overflow-hidden flex items-center justify-center md:h-[460px] transition-[all] duration-[0.7s] cursor-pointer max-sm:h-[100px] md:flex-[0.9] rounded-[24px] shadow-card`}
         classList={{ "max-sm:h-[60vh] md:flex-[3.0]": active() == imgUrl }}
         onClick={() => (active() == imgUrl ? setActive("") : setActive(imgUrl))}
       >
         <Image
           src={imgUrl}
           alt={title}
-          class="absolute w-full h-full object-cover object-center rounded-[24px]"
+          class="absolute w-full h-full object-cover object-center"
         />
         {active() !== imgUrl && (
           <h1 class=" font-semibold sm:text-[26px] text-[18px] dark:text-white absolute md:rotate-[-90deg] md:text-ellipsis md:whitespace-nowrap">

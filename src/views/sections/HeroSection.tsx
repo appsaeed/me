@@ -65,7 +65,7 @@ export default function ({ class: className, ...props }: HtmlAttr) {
     >
       <div class="w-full mx-auto text-center pt-28 pb-16">
         <Animate.h1 motion="slideInDown" duration={'1.5s'} class="mb-20 text-3xl font-extrabold   text-slate-300">
-          I'm <span class=" font-bold text-6xl">Saeed</span> Hossen
+          I'm <span class=" font-bold text-6xl">Saeed</span> Hosan
         </Animate.h1>
 
         <Animate.h2

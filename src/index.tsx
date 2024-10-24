@@ -10,7 +10,6 @@ import settings from "./app/settings";
 import "./assets/css/image.css";
 import "./assets/css/patterns.css";
 import "./index.css";
-import FacebookChat from "./plugins/facebook-chat";
 //@ts-ignore
 
 
@@ -27,7 +26,7 @@ export const Index = () => {
       <BrowserRouter base={settings.basename}>
         <Routes />
       </BrowserRouter>
-      <FacebookChat pageId="102783358643262" />
+      {/* <FacebookChat /> */}
     </QueryClientProvider>
   );
 };

@@ -1,26 +1,19 @@
 import { onCleanup, onMount } from 'solid-js';
 
-type Props = {
-    pageId: string;
-    version?: string;
-    attribution?: string;
-}
-
-export default function FacebookChat(props: Props) {
-    const { pageId, version = 'v21.0', attribution = 'biz_inbox' } = props;
+export default function FacebookChat() {
     onMount(() => {
         // Set up the chatbox attributes
         const chatbox = document.getElementById('fb-customer-chat') as HTMLElement;
         if (chatbox) {
-            chatbox.setAttribute('page_id', pageId);
-            chatbox.setAttribute('attribution', attribution);
+            chatbox.setAttribute('page_id', '102783358643262');
+            chatbox.setAttribute('attribution', 'biz_inbox');
         }
 
         // Load the Facebook SDK asynchronously
         (window as any).fbAsyncInit = function () {
             (window as any).FB.init({
                 xfbml: true,
-                version: version,
+                version: 'v18.0',
             });
         };
 

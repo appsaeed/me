@@ -27,6 +27,7 @@ export const Index = () => {
       <BrowserRouter base={settings.basename}>
         <Routes />
       </BrowserRouter>
+      <div class="chat-top"></div>
       <FbMessenger page_id="102783358643262" />
     </QueryClientProvider>
   );

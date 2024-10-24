@@ -10,8 +10,8 @@ import settings from "./app/settings";
 import "./assets/css/image.css";
 import "./assets/css/patterns.css";
 import "./index.css";
+import FbMessenger from "./plugins/FBMessenger";
 //@ts-ignore
-import MessengerCustomerChat from 'react-messenger-customer-chat';
 
 
 if (!getThemeStore()) setThemeStore(deviceTheme);
@@ -23,15 +23,12 @@ document
 
 export const Index = () => {
   return (
-    <BrowserRouter base={settings.basename}>
-      <MessengerCustomerChat
-        pageId="102783358643262"
-        appId="<APP_ID>"
-      />
-      <QueryClientProvider client={new QueryClient()}>
+    <QueryClientProvider client={new QueryClient()}>
+      <BrowserRouter base={settings.basename}>
         <Routes />
-      </QueryClientProvider>
-    </BrowserRouter>
+      </BrowserRouter>
+      <FbMessenger page_id="102783358643262" />
+    </QueryClientProvider>
   );
 };
 //dom selector

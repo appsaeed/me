@@ -10,7 +10,7 @@ import settings from "./app/settings";
 import "./assets/css/image.css";
 import "./assets/css/patterns.css";
 import "./index.css";
-import FbMessenger from "./plugins/FBMessenger";
+import FacebookChat from "./plugins/facebook-chat";
 //@ts-ignore
 
 
@@ -28,7 +28,7 @@ export const Index = () => {
         <Routes />
       </BrowserRouter>
       <div class="chat-top"></div>
-      <FbMessenger page_id="102783358643262" />
+      <FacebookChat pageId="102783358643262" />
     </QueryClientProvider>
   );
 };

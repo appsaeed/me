@@ -17,6 +17,7 @@ export default function FbMessenger({
     id = 'fb-customer-chat',
     className = ''
 }: Props) {
+    alert(0)
     createEffect(() => {
         const script = document.createElement('script');
         script.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';

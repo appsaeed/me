@@ -11,7 +11,7 @@ import projects from '../../data/projects'
 export default function ProjectSection(props: JSX.HTMLAttributes<HTMLElement>) {
 
   const chunkSize = 3; // Number of projects to load per batch
-  const [visibleProjects, setVisibleProjects] = createSignal(projects.slice(0, 6));
+  const [visibleProjects, setVisibleProjects] = createSignal(projects.slice(0, chunkSize));
   const [isLoading, setIsLoading] = createSignal(false);
 
   const loadMore = () => {
@@ -66,11 +66,11 @@ export default function ProjectSection(props: JSX.HTMLAttributes<HTMLElement>) {
 }
 
 type PProps = { index: number } & (typeof projects)[number]
-export function ProjectCard({ title, image, description, tags, link, index, github_link }: PProps) {
+export function ProjectCard({ title, image, description, tags, link, github_link }: PProps) {
   return (
-    <Animate.div
-      motion="slideInUp"
-      duration={`1.${index}s`}
+    <div
+      // motion="slideInUp"
+      // duration={`1.${index}s`}
       class=" bg-slate-900 p-4 rounded-2xl w-full transition scale-100 hover:scale-105 flex flex-col"
     >
       <div class="relative w-full h-48">
@@ -105,6 +105,6 @@ export function ProjectCard({ title, image, description, tags, link, index, gith
       <div class="mt-auto py-4 flex flex-wrap">
         <For each={tags}>{tag => <span class="link lowercase m-1">#{tag}</span>}</For>
       </div>
-    </Animate.div>
+    </div>
   )
 }

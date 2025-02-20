@@ -50,9 +50,8 @@ export default function Navbar() {
   return (
     <header
       id="header"
-      class={`transition-all z-[999] top-0 left-0 right-0 w-full bg-slate-200 dark:bg-slate-800 shadow-2xl  fixed ${
-        fixed() ? "fixeds py-3" : "py-4"
-      }`}
+      class={`transition-all z-[999] top-0 left-0 right-0 w-full bg-slate-200 dark:bg-slate-800 shadow-2xl  fixed ${fixed() ? "fixeds py-3" : "py-4"
+        }`}
     >
       <nav class={`${sections.headerfooter.common} w-full`}>
         <div class="w-full flex flex-wrap items-center justify-between mx-auto">
@@ -96,11 +95,10 @@ export default function Navbar() {
           </div>
 
           <div
-            class={`items-center justify-between w-full md:flex md:w-auto md:order-1 transition-all ${
-              isMobileMenu()
+            class={`items-center justify-between w-full md:flex md:w-auto md:order-1 transition-all ${isMobileMenu()
                 ? "max-md:opacity-100 max-md:visible"
                 : "max-md:opacity-0 max-md:h-0 max-sm:invisible"
-            }`}
+              }`}
             id="navbar-user"
           >
             <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg  max-md:bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:bg-gray-800 max-md:dark:bg-gray-900 max-sm:dark:border-gray-700">

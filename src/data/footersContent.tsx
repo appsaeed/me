@@ -37,10 +37,6 @@ export default {
                 link: "#partners/",
             },
             {
-                name: "Fullscreen",
-                link: "/fullscreen",
-            },
-            {
                 name: "Blog",
                 link: "#blog",
             },

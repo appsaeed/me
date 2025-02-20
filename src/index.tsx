@@ -10,7 +10,6 @@ import settings from "./app/settings";
 import "./assets/css/image.css";
 import "./assets/css/patterns.css";
 import "./index.css";
-import TawkChat from "./plugins/tawk-chat";
 //@ts-ignore
 
 
@@ -28,7 +27,7 @@ export const Index = () => {
         <Routes />
       </BrowserRouter>
       {/* <FacebookChat /> */}
-      <TawkChat />
+      {/* <TawkChat /> */}
     </QueryClientProvider>
   );
 };

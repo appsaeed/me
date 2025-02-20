@@ -31,10 +31,5 @@ export default function TawkChat() {
         });
     });
 
-    return (
-        <div>
-            <h1>Welcome to my SolidJS App</h1>
-            {/* Your other components go here */}
-        </div>
-    );
+    return null;
 }

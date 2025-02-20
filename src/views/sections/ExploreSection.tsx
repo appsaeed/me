@@ -14,10 +14,10 @@ export default function ExploreSection(props: HtmlAttr) {
 
   return (
     <section {...props}>
-      <SectionHeader text="Explore project" />
+      <SectionHeader text="Quick Explore projects" />
       <div class={`mx-auto w-full`}>
         <div class="flex lg:flex-row flex-col min-h-[70vh] gap-5">
-          <For each={projects}>
+          <For each={projects.sort((a, b) => ((a.order || 0) + (b.order || 0))).slice(0, 4)}>
             {(world, index) => {
               return (
                 <ExploreCard
@@ -26,6 +26,7 @@ export default function ExploreSection(props: HtmlAttr) {
                   imgUrl={world.image}
                   active={active}
                   link={world.link}
+                  github_link={world.github_link}
                   setActive={setActive}
                 />
               );
@@ -41,7 +42,8 @@ type ExploreCardProps = {
   index: number;
   imgUrl: string;
   title: string;
-  link?: string;
+  link?: string | null;
+  github_link?: string | null;
   active: () => string;
   setActive: (id: string) => void;
 };
@@ -53,6 +55,7 @@ export function ExploreCard({
   active,
   setActive,
   index,
+  github_link
 }: ExploreCardProps) {
   return (
     <>
@@ -91,7 +94,7 @@ export function ExploreCard({
             </a>
             <a
               target="_blank"
-              href={link}
+              href={link || github_link || "javascript:void(0)"}
               class="w-10 h-10 p-1 rounded-full hover:ring-2 ring-gray-300 dark:ring-gray-500 text-center items-center align-middle"
               data-tollpit
             >

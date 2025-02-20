@@ -1,7 +1,6 @@
 import { Route, Routes, useLocation } from "@solidjs/router";
 import { createEffect } from "solid-js";
 import Nopage from "./pages/404";
-import Fullscreen from "./pages/Fulscreen";
 import HelpCenter from "./pages/help-center";
 import Homepage from "./pages/index";
 import License from "./pages/license";
@@ -18,6 +17,8 @@ export default function Router() {
       });
     }
   });
+
+
   return (
     <Routes>
       <Route path="/" element={<Homepage />} />
@@ -26,7 +27,6 @@ export default function Router() {
       <Route path="/license" element={<License />} />
       <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       <Route path="/term-and-conditions" element={<Termandconditions />} />
-      <Route path="/fullscreen" element={<Fullscreen />} />
       <Route path="/*" element={<Nopage />} />
     </Routes>
   );

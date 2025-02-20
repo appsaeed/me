@@ -80,7 +80,7 @@ export default function ({ class: className, ...props }: HtmlAttr) {
         </Animate.h2>
 
         <Animate.a
-          href="https://raw.githubusercontent.com/appsaeed/assets/main/me/downloadable-resume.pdf"
+          href={import.meta.env.VITE_RESUME_URL}
           download={document.title}
           motion="slideInUp"
           type="button"

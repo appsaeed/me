@@ -23,7 +23,7 @@ export default function Views() {
       <AISections class={container} id="ai" />
       <ExploreSection class={container} id="explore" />
       <ContactSection class={container} id="contact" />
-      <TestimonialSection class={container} id="testimonial" />
+      <TestimonialSection class={container} id="reviews" />
       <CompaniesSection class={container} id="companies" />
       <Footer />
     </>

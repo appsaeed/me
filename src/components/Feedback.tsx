@@ -10,13 +10,15 @@ type ItemProps = {
     stars: string | number,
     message?: string,
     country_name?: string;
+    package_id?: string | number
 }
 export default function Feedback({
     name,
     profile,
     index,
     message,
-    country_name
+    country_name,
+    package_id
 }: ItemProps) {
     return (
         <Animate.div
@@ -34,7 +36,7 @@ export default function Feedback({
                 </div>
                 <a
                     // href={`https://www.fiverr.com/appsaeed/${gig_slug}`}
-                    href={`mailto:appsaeed@gmail.com?subject=Send me the Package -  ${index}`}
+                    href={`mailto:appsaeed@gmail.com?subject=Send me the Package -  ${package_id}`}
                     class="flex link gap-1"
                     target="_blank"
                 >

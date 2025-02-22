@@ -5,6 +5,8 @@ import HelpCenter from "./pages/help-center";
 import Homepage from "./pages/index";
 import License from "./pages/license";
 import PrivacyPolicy from "./pages/privacy-policy";
+import ProjectsPage from "./pages/Projects";
+import ReviewsPage from "./pages/Reviews";
 import Termandconditions from "./pages/terms-and-conditions";
 
 export default function Router() {
@@ -22,6 +24,8 @@ export default function Router() {
   return (
     <Routes>
       <Route path="/" element={<Homepage />} />
+      <Route path="/projects" element={<ProjectsPage />} />
+      <Route path="/reviews" element={<ReviewsPage />} />
       <Route path="/contact" element={<HelpCenter />} />
       <Route path="/help-center" element={<HelpCenter />} />
       <Route path="/license" element={<License />} />

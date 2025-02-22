@@ -62,7 +62,7 @@ export default function ({ class: className, ...props }: HtmlAttr) {
   return (
     <section
       class={cn(
-        `px-10 overflow-hidden pattern-circle dark:pattern-circle  bg-fixed dark:bg-fixed  max-w-fit min-h-fit`,
+        `px-10 overflow-hidden pattern-circle dark:pattern-circle  max-w-fit min-h-fit`,
       )}
       {...props}
     >
@@ -80,8 +80,7 @@ export default function ({ class: className, ...props }: HtmlAttr) {
         </Animate.h2>
 
         <Animate.a
-          href={import.meta.env.VITE_RESUME_URL}
-          download={document.title}
+          href={'https://raw.githubusercontent.com/appsaeed/assets/refs/heads/me/resume/Laravel-developer-saeed.pdf'}
           motion="slideInUp"
           type="button"
           class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-10 py-2 text-center mr-2 mb-2"

@@ -17,6 +17,7 @@
     "@solidjs/router": "^0.8.4",
     "@sweetalert2/theme-dark": "^5.0.15",
     "@tanstack/solid-query": "^4.35.0",
+    "axios": "^1.7.9",
     "clsx": "^2.1.1",
     "solid-icons": "^1.0.11",
     "solid-js": "^1.7.8",
@@ -39,5 +40,18 @@
     "vite": "^4.4.5",
     "vite-plugin-solid": "^2.7.0",
     "vite-sitemap": "^1.0.2"
-  }
+  },
+  "description": "![Saeed web application banner](https://raw.githubusercontent.com/appsaeed/assets/main/me/banner.jpg)",
+  "main": "postcss.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/appsaeed/appsaeed.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/appsaeed/appsaeed.github.io/issues"
+  },
+  "homepage": "https://github.com/appsaeed/appsaeed.github.io#readme"
 }

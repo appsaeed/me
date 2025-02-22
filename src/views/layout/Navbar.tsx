@@ -3,7 +3,6 @@ import { BsGithub } from "solid-icons/bs";
 import { FiMoon, FiSun } from "solid-icons/fi";
 import { For, createSignal, onCleanup, onMount } from "solid-js";
 import { getThemeStore, setThemeStore } from "utilies";
-import { pathJoin } from "../../app/utilies";
 import sections from "../../data/classNames/sections";
 import menus from "../../data/menus";
 import BrandLogo from "./BrandLogo";
@@ -96,8 +95,8 @@ export default function Navbar() {
 
           <div
             class={`items-center justify-between w-full md:flex md:w-auto md:order-1 transition-all ${isMobileMenu()
-                ? "max-md:opacity-100 max-md:visible"
-                : "max-md:opacity-0 max-md:h-0 max-sm:invisible"
+              ? "max-md:opacity-100 max-md:visible"
+              : "max-md:opacity-0 max-md:h-0 max-sm:invisible"
               }`}
             id="navbar-user"
           >
@@ -120,7 +119,7 @@ export function MenuList({ name, path, icon: Icon }: MenuListProps) {
   return (
     <li>
       <Link
-        href={path ? pathJoin(path) : `/#${String(name).toLocaleLowerCase()}`}
+        href={path || '#'}
         class={`block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 capitalize`}
       >
         <span class="flex items-center">

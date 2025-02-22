@@ -8,9 +8,12 @@ import Image from '../../components/Image'
 import SectionDescription from '../../components/SectionDescription'
 import SectionHeader from '../../components/SectionHeader'
 import projects from '../../data/projects'
-export default function ProjectSection(props: JSX.HTMLAttributes<HTMLElement>) {
 
-  const chunkSize = 3; // Number of projects to load per batch
+type ProjectSectionInterface = JSX.HTMLAttributes<HTMLElement> & {
+  chunkSize?: number;
+}
+export default function ProjectSection({ chunkSize = 3, ...props }: ProjectSectionInterface) {
+
   const [visibleProjects, setVisibleProjects] = createSignal(projects.slice(0, chunkSize));
   const [isLoading, setIsLoading] = createSignal(false);
 

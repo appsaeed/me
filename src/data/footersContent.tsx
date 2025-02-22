@@ -26,20 +26,22 @@ export default {
         ],
     },
     community: {
-        title: "Community",
+        title: "Contact & others",
         links: [
             {
-                name: "Help Center",
-                link: "/help-center",
+                name: "Fiverr buyer's reviews",
+                link: "/reviews",
+            },
+
+            {
+                name: "All Projects",
+                link: "/projects",
             },
             {
-                name: "Partners",
-                link: "#partners/",
+                name: "Contact",
+                link: "/contact",
             },
-            {
-                name: "Blog",
-                link: "#blog",
-            },
+
         ],
     },
     resources: {
@@ -60,7 +62,7 @@ export default {
         ],
     },
     followus: {
-        title: "Follow us",
+        title: "Follow me",
         links: Object.values(social_media),
     },
     Legal: {

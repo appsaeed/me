@@ -1,8 +1,13 @@
 export default [
   {
-    name: "Upwork",
-    logo: "https://www.upwork.com/static/marketing/ui/master/img/logo-1200x630.png",
-    link: "https://www.upwork.com/freelancers/~01434fccf377704a78",
+    name: "Bright IT",
+    logo: "https://cdn.prod.website-files.com/6686ac147271acf416583b0f/66a8d4a7c869d8b94b6da7dd_favicon-32x32.png",
+    link: "https://www.bright.it",
+  },
+  {
+    name: "Etihadsouq",
+    logo: "https://etihadsouq.ae/wp-content/uploads/2023/03/etihadsouq-logo-1.png",
+    link: "https://etihadsouq.ae",
   },
   {
     name: "Fiverr",
@@ -13,10 +18,5 @@ export default [
     name: "Linkedin",
     logo: "https://static.licdn.com/scds/common/u/images/logos/favicons/v1/favicon.ico",
     link: "https://bd.linkedin.com/in/appsaeed",
-  },
-  {
-    name: "Toptal",
-    logo: "https://assets.toptal.io/images?url=https%3A%2F%2Fwww.toptal.com%2Ftoptal-logo.png",
-    link: "",
   },
 ];
